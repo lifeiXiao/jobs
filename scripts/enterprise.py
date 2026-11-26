@@ -141,6 +141,8 @@ def collect_public_html(config,client,old,now,errors):
             entry_count=0
             for a in soup.select('a[href]'):
                 url=urljoin(entry,a['href']);title=clean(a.get('title') or a.get_text(' ',strip=True))
+                title_node=a.select_one(config['title_selector']) if config.get('title_selector') else None
+                if title_node:title=clean(title_node.get_text(' ',strip=True))
                 if re.search(config['link_pattern'],url) and 2<=len(title)<=130:
                     found[url]=title
                     entry_count+=1
@@ -173,7 +175,8 @@ def collect_public_html(config,client,old,now,errors):
                     if row.get('qualifications') and row['qualifications'] not in raw:raw+='\n任职要求：'+row['qualifications']
                     body=read_text(BeautifulSoup(raw,'html.parser'))
                     due=deadline('报名截止日期：'+str(row['validThrough'])) if row.get('validThrough') else deadline(body)
-                    category='实习' if row.get('employmentType')=='INTERN' or hero and hero.get('data-job-type')=='internship' else '企业校招' if hero and hero.get('data-job-type')=='campus' else None
+                    employment=str(row.get('employmentType') or '')
+                    category='实习' if re.search(r'INTERN|实习',employment,re.I) or hero and hero.get('data-job-type')=='internship' else '企业校招' if re.search(r'校招|校园|应届',employment) or hero and hero.get('data-job-type')=='campus' else None
                     item=normalize(config,old,now,title=row.get('title') or title,url=url,company=company,body=body,location=' '.join(places),published=row.get('datePosted'),due=due,category=category,original_url=apply_url)
                     item['previewKind']='公开聚合页摘录 · 原始官网投递可追溯'
                     records.append(item)
@@ -202,6 +205,8 @@ def collect_enterprise(config,old,now):
         adapter={'zhaopin':collect_zhaopin,'tencent':collect_tencent,'job5156':collect_job5156,'public_table':collect_public_table,'public_html':collect_public_html}[config['adapter']]
         records=adapter(config,client,old,now,errors)
         status.update(status=('partial' if errors else 'ok') if records else 'error',count=len(records),detailsOk=len(records),failedDetails=len(errors),message=f'已读取 {len(records)} 条企业岗位' if records else '未取得公开岗位数据，继续保留其他渠道信息',errors=errors[:5])
+        if config['id']=='boss' and not records:
+            status['message']='尚未接入岗位：公开页面需要访问验证；当前未配置官方数据接口授权'
         return records,status
     except Exception as exc:
         status['message']=str(exc)[:200];return [],status
@@ -215,7 +220,12 @@ def original_key(url):
     if 'zhipin.com' in p.netloc and '/job_detail/' in path:return 'boss:'+path.split('/job_detail/')[-1].split('.')[0]
     # Keep semantic job IDs and discard tracking parameters only.
     useful={k:v for k,v in query.items() if k.lower() in ('id','jobid','postid','positionid','job_id','position_id')}
-    return re.sub(r'^www\.','',p.netloc.lower())+path+('?' +urlencode(useful,doseq=True) if useful else '')
+    route=''
+    if p.fragment.startswith('/') and '?' in p.fragment:
+        fragment=urlsplit(p.fragment)
+        ids={k:v for k,v in parse_qs(fragment.query).items() if k.lower() in ('id','jobid','postid','positionid','job_id','position_id')}
+        if ids:route='#'+fragment.path+'?'+urlencode(ids,doseq=True)
+    return re.sub(r'^www\.','',p.netloc.lower())+path+('?' +urlencode(useful,doseq=True) if useful else '')+route
 
 def normalized(value):
     return re.sub(r'[\s\W_]+','',unicodedata.normalize('NFKC',value).lower())

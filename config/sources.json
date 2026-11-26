@@ -105,6 +105,46 @@
     "limit": 50
   },
   {
+    "id": "offerseek",
+    "name": "OfferSeek · 企业官网岗位公开聚合",
+    "category": "企业社招",
+    "adapter": "public_html",
+    "url": "https://offerseek.ai/jobs",
+    "list_urls": [
+      "https://offerseek.ai/jobs",
+      "https://offerseek.ai/jobs/campus",
+      "https://offerseek.ai/jobs/internship"
+    ],
+    "link_pattern": "/jobs/\\d+$",
+    "title_selector": ".job-title",
+    "per_list_limit": 30,
+    "limit": 90
+  },
+  {
+    "id": "juhejob",
+    "name": "招聘信息分享 · 企业与国企公开聚合",
+    "category": "企业社招",
+    "adapter": "public_html",
+    "url": "https://www.juhejob.com/",
+    "list_urls": [
+      "https://www.juhejob.com/",
+      "https://www.juhejob.com/social",
+      "https://www.juhejob.com/campus",
+      "https://www.juhejob.com/?company=中国石油",
+      "https://www.juhejob.com/?company=中国移动",
+      "https://www.juhejob.com/?company=京东",
+      "https://www.juhejob.com/?company=华为",
+      "https://www.juhejob.com/?company=工商银行"
+    ],
+    "link_pattern": "/job/\\d+\\.html$",
+    "title_selector": ".job-title",
+    "apply_selectors": [
+      "a.apply-btn"
+    ],
+    "per_list_limit": 15,
+    "limit": 120
+  },
+  {
     "id": "boss",
     "name": "BOSS直聘 · 公开页面",
     "category": "企业社招",
