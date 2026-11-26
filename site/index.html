@@ -5,6 +5,7 @@
   <meta name="description" content="按专业和城市发现招聘机会。每日云端更新，站内预览招聘详情与投递截止时间。">
   <meta name="theme-color" content="#143d38">
   <title>jobs · 每日招聘雷达</title>
+  <!-- DATA_INDEX -->
   <link rel="stylesheet" href="./style.css"><script type="module" src="./app.js"></script>
 </head>
 <body>
@@ -20,7 +21,7 @@
         <div class="sidebar-footer"><span>☁</span><p>云端运行，无需开机<br><small>不依赖 GPT 或本机采集</small></p></div>
       </aside>
       <section class="results" aria-labelledby="result-heading"><div class="search-bar"><span aria-hidden="true">⌕</span><input id="keyword" type="search" placeholder="搜索岗位、公司或专业关键词…" aria-label="搜索招聘信息"><kbd>搜索</kbd></div>
-        <div class="category-tabs" id="category-tabs" aria-label="招聘来源类型"></div>
+        <p id="search-status" class="muted" aria-live="polite" hidden></p><div class="category-tabs" id="category-tabs" aria-label="招聘来源类型"></div>
         <div class="result-toolbar"><h2 id="result-heading">全部机会 <span id="result-count">—</span></h2><label class="sort-label">排序 <select id="sort"><option value="newest">最近发布 / 更新</option><option value="deadline">最早截止</option></select></label></div>
         <div class="result-controls"><label class="check-label"><input id="hide-expired" type="checkbox" checked> 隐藏已截止</label><label class="check-label"><input id="only-dated" type="checkbox"> 仅看明确截止日期</label><label class="check-label"><input id="week-only" type="checkbox"> 近 7 天发布</label></div>
         <div id="active-filters" class="active-filters"></div><div id="jobs" class="job-grid" aria-live="polite"><div class="empty-state">正在载入招聘信息…</div></div>

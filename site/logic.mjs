@@ -1,4 +1,4 @@
-export function chinaDay(now=new Date()){return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(now)}
+export function chinaDay(now=new Date()){return new Date(now.getTime()+8*3600000).toISOString().slice(0,10)}
 export function isExpired(job,now=new Date()){
   const d=job.deadline;
   if(d?.kind!=='date'||!d.date)return false;
@@ -10,15 +10,18 @@ export function daysLeft(job,now=new Date()){
   return Math.round((Date.parse(job.deadline.date+'T00:00:00+08:00')-Date.parse(chinaDay(now)+'T00:00:00+08:00'))/86400000);
 }
 export function filterJobs(jobs,state,now=new Date()){
+  const words=state.keyword.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const weekStart=state.weekOnly?chinaDay(new Date(now.getTime()-6*86400000)):null;
   let result=jobs.filter(job=>{
     if(state.hideExpired&&isExpired(job,now))return false;
     if(state.onlyDated&&job.deadline?.kind!=='date')return false;
-    if(state.weekOnly&&(!job.publishedAt||job.publishedAt<chinaDay(new Date(now.getTime()-6*86400000))))return false;
+    if(state.weekOnly&&(!job.publishedAt||job.publishedAt<weekStart))return false;
     if(state.majors.size&&!job.majors.some(x=>state.majors.has(x)))return false;
     if(state.cities.size&&!job.cities.some(x=>state.cities.has(x)))return false;
     if(state.category&&job.category!==state.category)return false;
-    const haystack=[job.title,job.announcementTitle,job.company,job.industry,job.preview,job.source,...job.majors,...job.cities].join(' ').toLowerCase();
-    return state.keyword.trim().toLowerCase().split(/\s+/).filter(Boolean).every(word=>haystack.includes(word));
+    if(!words.length)return true;
+    const haystack=[job.title,job.announcementTitle,job.company,job.industry,job.preview,job.searchText,job.source,...job.majors,...job.cities].join(' ').toLowerCase();
+    return words.every(word=>haystack.includes(word));
   });
   if(state.sort==='deadline')result.sort((a,b)=>(a.deadline?.date||'9999').localeCompare(b.deadline?.date||'9999')||(a.deadline?.time||'23:59').localeCompare(b.deadline?.time||'23:59'));
   else {
