@@ -195,10 +195,15 @@ def deduplicate(records):
     for record in ordered:
         key=original_key(record.get('originalUrl') or record['url'])
         company=normalized(record.get('company',''))
+        if record.get('kind')=='position' and not company:
+            key+='#role='+normalized(record['title'])
         known_cities=[c for c in record.get('cities',[]) if '待确认' not in c]
         identity=(company,normalized(record['title']),tuple(sorted(known_cities)),record.get('employmentType') or record.get('category')) if company and known_cities and record.get('kind')=='position' else None
         index=seen_url.get(key)
-        if index is None and identity:index=seen_identity.get(identity)
+        if index is None and identity:
+            candidate=seen_identity.get(identity)
+            # Distinct IDs on one platform may be different teams or vacancies.
+            if candidate is not None and groups[candidate]['sourceId']!=record['sourceId']:index=candidate
         source={'name':record['source'],'url':record['url'],'deadline':record['deadline']}
         if index is None:
             item={**record,'sources':list(record.get('sources') or [source])}

@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 TAXONOMY = json.loads((ROOT/'config/taxonomy.json').read_text(encoding='utf-8'))
 TZ = dt.timezone(dt.timedelta(hours=8))
 UA = 'JobsRadar/1.0 (+https://github.com/lifeiXiao/jobs)'
-PARSER_VERSION = 3
+PARSER_VERSION = 4
 CHALLENGE = re.compile(r'var\s+arg1\s*=|EO_Bot_Ssid|acw_sc__|"l1"\s*:\s*"var|Just a moment|访问验证|安全验证',re.I)
 DATE_RE = re.compile(r'(20\d{2})\s*[年./-]\s*(\d{1,2})\s*[月./-]\s*(\d{1,2})日?')
 
