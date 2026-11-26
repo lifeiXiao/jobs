@@ -6,10 +6,15 @@ from urllib.parse import urljoin
 from urllib.robotparser import RobotFileParser
 
 SOURCES = [
- 'https://www.shiyebian.com/',
- 'https://rczp.nju.edu.cn/',
- 'https://www.cssar.cas.cn/jrwm2015/',
- 'https://www.yingjiesheng.com/other/',
+ 'https://www.zhipin.com/web/geek/jobs?city=100010000',
+ 'https://sou.zhaopin.com/',
+ 'https://careers.tencent.com/tencentcareer/api/post/Query?pageIndex=1&pageSize=20&language=zh-cn&area=cn',
+ 'https://www2.iguopin.com/',
+ 'https://www.jobui.com/jobs/',
+ 'https://jobs.51job.com/',
+ 'https://www.liepin.com/zhaopin/',
+ 'https://hr.163.com/job-list.html',
+ 'https://jobs.bytedance.com/experienced/position',
 ]
 def probe(url):
  out=[url]
@@ -26,6 +31,7 @@ def probe(url):
   r=requests.get(url,timeout=22,headers={'User-Agent':'JobsRadar/1.0 (+https://github.com/lifeiXiao/jobs)'})
   r.encoding=r.apparent_encoding
   out.append(f'PAGE {r.status_code} encoding={r.encoding}')
+  out.append('SNIPPET '+r.text[:300])
   soup=BeautifulSoup(r.text,'html.parser')
   Path('snapshots').mkdir(exist_ok=True)
   Path('snapshots/'+url.replace('https://','').replace('/','_').replace('?','_')+'.html').write_text(r.text,encoding='utf-8')
