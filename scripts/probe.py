@@ -1,15 +1,22 @@
 import concurrent.futures
+import os
 import requests
 from pathlib import Path
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from urllib.robotparser import RobotFileParser
 
+if os.environ.get('GITHUB_ACTIONS')!='true' or os.environ.get('RUNNER_ENVIRONMENT')!='github-hosted':
+ raise SystemExit('Source inspection runs only on GitHub-hosted runners.')
 SOURCES = [
- 'https://jobs.ultraai.site/jobs/baidu_campus/internship%3Acbce9e6f-d16e-4d89-b2c5-5f24eb48711e',
- 'https://jobs.ultraai.site/jobs/social',
- 'https://jobs.ultraai.site/jobs/campus',
- 'https://jobs.ultraai.site/jobs/internship',
+ 'https://offerseek.ai/',
+ 'https://www.juhejob.com/',
+ 'https://www.liepin.com/zhaopin/',
+ 'https://mnowpick.nowcoder.com/m/intern/center?recruitType=1',
+ 'https://www.ncss.cn/student/jobs/index.html',
+ 'https://www.shixiseng.com/interns',
+ 'https://www.iguopin.com/',
+ 'https://www.zhipin.com/c100010000/',
 ]
 def probe(url):
  out=[url]
