@@ -6,15 +6,13 @@ from urllib.parse import urljoin
 from urllib.robotparser import RobotFileParser
 
 SOURCES = [
- 'https://www.zhipin.com/web/geek/jobs?city=100010000',
- 'https://sou.zhaopin.com/',
- 'https://careers.tencent.com/tencentcareer/api/post/Query?pageIndex=1&pageSize=20&language=zh-cn&area=cn',
- 'https://www2.iguopin.com/',
- 'https://www.jobui.com/jobs/',
- 'https://jobs.51job.com/',
- 'https://www.liepin.com/zhaopin/',
- 'https://hr.163.com/job-list.html',
- 'https://jobs.bytedance.com/experienced/position',
+ 'https://www.zhaopin.com/sou/jl765/',
+ 'https://www.zhaopin.com/sou/jl635/',
+ 'https://www.zhaopin.com/jobdetail/CC120567060J40892154807.htm',
+ 'https://careers.tencent.com/tencentcareer/api/post/ByPostId?postId=2104502491390590976&language=zh-cn',
+ 'https://www.job5156.com/',
+ 'https://www.zhipin.com/c100010000/',
+ 'https://qzzyd.com/open/calendar',
 ]
 def probe(url):
  out=[url]
@@ -30,7 +28,7 @@ def probe(url):
    return '\n'.join(out+['ROBOTS UNAVAILABLE'])
   r=requests.get(url,timeout=22,headers={'User-Agent':'JobsRadar/1.0 (+https://github.com/lifeiXiao/jobs)'})
   r.encoding=r.apparent_encoding
-  out.append(f'PAGE {r.status_code} encoding={r.encoding}')
+  out.append(f'PAGE {r.status_code} encoding={r.encoding} final={r.url}')
   out.append('SNIPPET '+r.text[:300])
   soup=BeautifulSoup(r.text,'html.parser')
   Path('snapshots').mkdir(exist_ok=True)
