@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="按专业和城市发现招聘机会。每日云端更新，站内预览招聘详情与投递截止时间。">
+  <meta name="theme-color" content="#143d38">
+  <title>jobs · 每日招聘雷达</title>
+  <link rel="stylesheet" href="./style.css"><script type="module" src="./app.js"></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./"><span class="brand-icon">j.</span><strong>jobs</strong><span class="brand-sub">每日招聘雷达</span></a><div class="toplinks"><button id="source-button" class="text-button"><i class="live-dot"></i>数据来源 <span id="source-count">—</span></button><a href="https://github.com/lifeiXiao/jobs" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></header>
+  <main>
+    <section class="hero"><div><div class="eyebrow"><span class="tiny-line"></span> YOUR NEXT CHAPTER</div><h1>下一站，<em>从这里开始。</em></h1><p>把招聘信息整理好，让你把时间留给机会。<br>按专业与城市筛选，先看详情，再决定投递。</p><div class="hero-meta"><span class="live-dot"></span><span id="update-time">正在读取云端数据…</span><span class="divider">/</span><span>每日自动更新</span></div></div><div class="hero-stats"><div><strong id="stat-total">—</strong><span>岗位与招聘公告</span></div><div><strong id="stat-recent">—</strong><span>近 7 天发布</span></div><div><strong id="stat-due">—</strong><span>7 天内截止</span></div><div class="stat-note">多来源汇集 · 原文可追溯</div></div><span class="hero-orbit" aria-hidden="true"></span></section>
+    <div id="health-banner" class="notice" hidden></div>
+    <div class="workspace">
+      <aside class="sidebar"><div class="filter-title"><h2>筛选机会</h2><button id="reset" class="text-button">重置</button></div>
+        <p class="filter-hint">同一分组满足任一选项<br>专业与城市之间同时匹配</p>
+        <details class="filter-section" open><summary>招聘专业 <span id="major-selected" class="selection-count"></span></summary><div class="selection-mode" role="group" aria-label="专业选择模式"><button data-mode="major" data-value="single" aria-pressed="false">单选</button><button data-mode="major" data-value="multi" aria-pressed="true">多选</button></div><label class="mini-search"><span>⌕</span><input id="major-search" type="search" placeholder="查找专业" aria-label="查找专业分类"></label><div id="major-options" class="options-list"></div><p class="field-note">按专业要求中的关键词归类，非报考资格判定。</p></details>
+        <details class="filter-section" open><summary>工作城市 <span id="city-selected" class="selection-count"></span></summary><div class="selection-mode" role="group" aria-label="城市选择模式"><button data-mode="city" data-value="single" aria-pressed="false">单选</button><button data-mode="city" data-value="multi" aria-pressed="true">多选</button></div><label class="mini-search"><span>⌕</span><input id="city-search" type="search" placeholder="查找城市" aria-label="查找城市"></label><div id="city-options" class="options-list cities"></div></details>
+        <div class="sidebar-footer"><span>☁</span><p>云端运行，无需开机<br><small>不依赖 GPT 或本机采集</small></p></div>
+      </aside>
+      <section class="results" aria-labelledby="result-heading"><div class="search-bar"><span aria-hidden="true">⌕</span><input id="keyword" type="search" placeholder="搜索岗位、单位或专业关键词…" aria-label="搜索招聘信息"><kbd>搜索</kbd></div>
+        <div class="category-tabs" id="category-tabs" aria-label="招聘来源类型"></div>
+        <div class="result-toolbar"><h2 id="result-heading">全部机会 <span id="result-count">—</span></h2><label class="sort-label">排序 <select id="sort"><option value="newest">最新发布</option><option value="deadline">最早截止</option></select></label></div>
+        <div class="result-controls"><label class="check-label"><input id="hide-expired" type="checkbox" checked> 隐藏已截止</label><label class="check-label"><input id="only-dated" type="checkbox"> 仅看明确截止日期</label><label class="check-label"><input id="week-only" type="checkbox"> 近 7 天发布</label></div>
+        <div id="active-filters" class="active-filters"></div><div id="jobs" class="job-grid" aria-live="polite"><div class="empty-state">正在载入招聘信息…</div></div>
+        <button id="load-more" class="load-more" hidden>查看更多机会 ↓</button><p class="results-note">未注明截止时间 ≠ 仍在招聘。岗位条件及有效期请结合原公告核实。</p>
+      </section>
+    </div>
+    <footer><a class="footer-brand" href="./">jobs<span> / 每日招聘雷达</span></a><p>聚合公开招聘线索与简要摘录 · 不代收简历 · 投递请前往招聘方入口</p><a href="https://github.com/lifeiXiao/jobs/actions" target="_blank" rel="noopener noreferrer">查看更新记录 ↗</a></footer>
+  </main>
+  <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span id="detail-category" class="eyebrow"></span><button id="close-detail" class="close-button" aria-label="关闭详情">×</button></div><div id="detail-body"></div></dialog>
+  <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-top"><span class="eyebrow">DATA SOURCES</span><button id="close-sources" class="close-button" aria-label="关闭数据来源">×</button></div><h2 id="sources-title">每一条信息，都有出处。</h2><p class="muted">仅采集公开可访问页面，遵循来源访问规则。失败来源会保留上次数据。</p><div id="sources-list"></div><div class="cloud-note"><strong>每天北京时间 08:23 更新</strong><p>14:23 对未成功同步的情况重试。实际启动时间可能因 GitHub 排队延后；数据超过 36 小时未更新时会显示提醒。</p><a href="https://github.com/lifeiXiao/jobs/actions/workflows/update.yml" target="_blank" rel="noopener noreferrer">查看云端任务 ↗</a></div></dialog>
+</body></html>

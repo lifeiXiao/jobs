@@ -1,18 +1,18 @@
 import concurrent.futures
 import requests
+from pathlib import Path
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from urllib.robotparser import RobotFileParser
 
 SOURCES = [
  'https://www.shiyebian.net/',
- 'https://www.gaoxiaojob.com/',
  'https://www.gaoxiaojob.com/announcement/detail/447236.html',
- 'https://yjsb.zafu.edu.cn/',
- 'https://yjsb.zafu.edu.cn/info/1092/10947.htm',
- 'https://search.mohrss.gov.cn/was5/web/search?channelid=202558&orderby=-docreltime',
- 'https://www.yingjiesheng.com/',
- 'https://www.gwyoo.com/shiye/',
+ 'https://www.gaoxiaojob.com/announcement/detail/448357.html',
+ 'https://job.cas.cn/',
+ 'https://www.91boshi.net/',
+ 'https://hr.nju.edu.cn/',
+ 'https://www.shiyebian.net/xinxi/',
 ]
 def probe(url):
  out=[url]
@@ -30,10 +30,12 @@ def probe(url):
   r.encoding=r.apparent_encoding
   out.append(f'PAGE {r.status_code} encoding={r.encoding}')
   soup=BeautifulSoup(r.text,'html.parser')
+  Path('snapshots').mkdir(exist_ok=True)
+  Path('snapshots/'+url.replace('https://','').replace('/','_').replace('?','_')+'.html').write_text(r.text,encoding='utf-8')
   out.append('TITLE '+str(soup.title))
   selected=[a for a in soup.select('a[href]') if len(a.get_text(' ',strip=True))>12]
-  for a in selected[:65]:
-   out.append(str(a)[:500]+' PARENT '+a.parent.get_text(' ',strip=True)[:350])
+  for a in selected[:15]:
+   out.append(str(a)[:250]+' PARENT '+a.parent.get_text(' ',strip=True)[:120])
  except Exception as e: out.append(str(e))
  return '\n'.join(out)
 with concurrent.futures.ThreadPoolExecutor(max_workers=7) as pool:

@@ -13,3 +13,7 @@ jobs:
           python-version: '3.12'
       - run: pip install beautifulsoup4==4.13.4 requests==2.32.4
       - run: python scripts/probe.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: source-snapshots
+          path: snapshots
