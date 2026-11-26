@@ -28,7 +28,7 @@ await page.locator('#reset').click();
 await page.locator('#keyword').fill('____no_such_job____');
 assert.equal(await page.locator('.job-card').count(),0);
 await page.locator('#reset').click();
-assert.ok(Number(await page.locator('#result-count').textContent())>=count);
+assert.ok(Number((await page.locator('#result-count').textContent()).replaceAll(',',''))>=count);
 assert.equal(await page.locator('#keyword').inputValue(),'');
 await page.locator('#only-dated').check();
 await page.locator('#sort').selectOption('deadline');
