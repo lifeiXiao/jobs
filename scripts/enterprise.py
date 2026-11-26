@@ -199,7 +199,7 @@ def deduplicate(records):
         identity=(company,normalized(record['title']),tuple(sorted(known_cities)),record.get('employmentType') or record.get('category')) if company and known_cities and record.get('kind')=='position' else None
         index=seen_url.get(key)
         if index is None and identity:index=seen_identity.get(identity)
-        source={'name':record['source'],'url':record['url']}
+        source={'name':record['source'],'url':record['url'],'deadline':record['deadline']}
         if index is None:
             item={**record,'sources':list(record.get('sources') or [source])}
             groups.append(item);index=len(groups)-1
@@ -208,8 +208,9 @@ def deduplicate(records):
         else:
             duplicates+=1;item=groups[index]
             for source in record.get('sources') or [source]:
-                if source not in item['sources']:item['sources'].append(source)
+                if not any(s['url']==source['url'] and s['name']==source['name'] for s in item['sources']):item['sources'].append(source)
             # Do not merge different cutoff dates by inventing a common deadline.
             if item['deadline'].get('date') and record['deadline'].get('date') and item['deadline']['date']!=record['deadline']['date']:
                 item['deadlineConflict']=True
+                item['deadline']={'kind':'unknown','date':None,'time':None,'label':'来源截止时间不一致 · 请核实','evidence':None}
     return sorted(groups,key=lambda j:(j.get('updatedAt') or j.get('publishedAt') or '',j['firstSeenAt']),reverse=True),duplicates

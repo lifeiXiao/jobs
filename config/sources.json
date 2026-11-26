@@ -1,9 +1,181 @@
 [
-  {"id":"yingjiesheng","name":"应届生求职网","category":"校园招聘","url":"https://www.yingjiesheng.com/other/","link_pattern":"/job-\\d+-\\d+-\\d+\\.html","content_selectors":[".jobIntro","#wordDiv",".job_detail",".main"],"limit":35},
-  {"id":"shiyebian","name":"事业单位招聘考试网","category":"事业单位","url":"https://www.shiyebian.com/","link_pattern":"/(?:xinxi/\\d+|\\d{6}/\\d+)\\.html","content_selectors":[".content","#content",".article-content",".article"],"newest_id_first":true,"limit":35},
-  {"id":"gaoxiaojob","name":"高校人才网","category":"高校与科研","url":"https://www.gaoxiaojob.com/","link_pattern":"/announcement/detail/\\d+\\.html$","content_selectors":[".detail-main-content",".detail-main"],"newest_id_first":true,"limit":50},
-  {"id":"mohrss","name":"人社部 · 中央事业单位","category":"政府公告","url":"https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/zpgg/index.html","link_pattern":"/t\\d{8}_\\d+\\.html","content_selectors":[".TRS_Editor","#Zoom",".article"],"limit":20},
-  {"id":"zafu","name":"浙江农林大学 · 就业信息","category":"高校就业网","url":"https://yjsb.zafu.edu.cn/","link_pattern":"/info/1092/\\d+\\.htm","content_selectors":[".v_news_content","#vsb_content"],"limit":8},
-  {"id":"nju","name":"南京大学 · 人才招聘","category":"高校与科研","url":"https://rczp.nju.edu.cn/","link_pattern":"/\\d{8}/i\\d+\\.html$","content_selectors":[".wp_articlecontent",".article",".content"],"title_pattern":"招聘|招收","limit":25},
-  {"id":"cas","name":"中国科学院 · 官方招聘","category":"政府公告","url":"https://www.cas.cn/rc/rczp/","link_pattern":"/t\\d{8}_\\d+\\.html","content_selectors":[".TRS_Editor",".TRS_UEDITOR",".article-content"],"limit":20}
+  {
+    "id": "zhaopin",
+    "name": "智联招聘 · 企业公开岗位",
+    "category": "企业社招",
+    "adapter": "zhaopin",
+    "url": "https://sou.zhaopin.com/",
+    "list_urls": [
+      "https://sou.zhaopin.com/",
+      "https://www.zhaopin.com/sou/jl530/",
+      "https://www.zhaopin.com/sou/jl538/",
+      "https://www.zhaopin.com/sou/jl531/",
+      "https://www.zhaopin.com/sou/jl551/",
+      "https://www.zhaopin.com/sou/jl635/",
+      "https://www.zhaopin.com/sou/jl636/",
+      "https://www.zhaopin.com/sou/jl639/",
+      "https://www.zhaopin.com/sou/jl640/",
+      "https://www.zhaopin.com/sou/jl653/",
+      "https://www.zhaopin.com/sou/jl664/",
+      "https://www.zhaopin.com/sou/jl701/",
+      "https://www.zhaopin.com/sou/jl702/",
+      "https://www.zhaopin.com/sou/jl719/",
+      "https://www.zhaopin.com/sou/jl736/",
+      "https://www.zhaopin.com/sou/jl749/",
+      "https://www.zhaopin.com/sou/jl763/",
+      "https://www.zhaopin.com/sou/jl765/",
+      "https://www.zhaopin.com/sou/jl773/",
+      "https://www.zhaopin.com/sou/jl801/",
+      "https://www.zhaopin.com/sou/jl854/",
+      "https://www.zhaopin.com/sou/jl599/",
+      "https://www.zhaopin.com/sou/jl600/",
+      "https://www.zhaopin.com/sou/jl613/",
+      "https://www.zhaopin.com/sou/jl622/",
+      "https://www.zhaopin.com/sou/jl681/",
+      "https://www.zhaopin.com/sou/jl682/",
+      "https://www.zhaopin.com/sou/jl673/",
+      "https://www.zhaopin.com/sou/jl831/",
+      "https://www.zhaopin.com/sou/jl822/",
+      "https://www.zhaopin.com/sou/jl799/"
+    ]
+  },
+  {
+    "id": "tencent",
+    "name": "腾讯 · 官方企业岗位",
+    "category": "企业社招",
+    "adapter": "tencent",
+    "url": "https://careers.tencent.com/search.html",
+    "pages": 8,
+    "detail_limit": 80
+  },
+  {
+    "id": "job5156",
+    "name": "智通直聘 · 制造业与企业岗位",
+    "category": "企业社招",
+    "adapter": "job5156",
+    "url": "https://www.job5156.com/",
+    "list_urls": [
+      "https://www.job5156.com/",
+      "https://www.job5156.com/guangzhou/",
+      "https://www.job5156.com/shenzhen/",
+      "https://www.job5156.com/foshan/",
+      "https://www.job5156.com/jiangmen/",
+      "https://www.job5156.com/huizhou/",
+      "https://www.job5156.com/zhongshan/",
+      "https://www.job5156.com/suzhou/",
+      "https://www.job5156.com/ningbo/",
+      "https://www.job5156.com/changsha/"
+    ]
+  },
+  {
+    "id": "boss",
+    "name": "BOSS直聘 · 公开页面",
+    "category": "企业社招",
+    "adapter": "public_html",
+    "url": "https://www.zhipin.com/c100010000/",
+    "link_pattern": "/job_detail/[A-Za-z0-9_-]+\\.html",
+    "content_selectors": [
+      ".job-sec-text",
+      ".job-detail"
+    ],
+    "company_selectors": [
+      ".company-info a",
+      ".company-name"
+    ],
+    "limit": 25
+  },
+  {
+    "id": "yingjiesheng",
+    "name": "应届生求职网",
+    "category": "校园招聘",
+    "url": "https://www.yingjiesheng.com/other/",
+    "link_pattern": "/job-\\d+-\\d+-\\d+\\.html",
+    "content_selectors": [
+      ".jobIntro",
+      "#wordDiv",
+      ".job_detail",
+      ".main"
+    ],
+    "limit": 35
+  },
+  {
+    "id": "shiyebian",
+    "name": "事业单位招聘考试网",
+    "category": "事业单位",
+    "url": "https://www.shiyebian.com/",
+    "link_pattern": "/(?:xinxi/\\d+|\\d{6}/\\d+)\\.html",
+    "content_selectors": [
+      ".content",
+      "#content",
+      ".article-content",
+      ".article"
+    ],
+    "newest_id_first": true,
+    "limit": 35
+  },
+  {
+    "id": "gaoxiaojob",
+    "name": "高校人才网",
+    "category": "高校与科研",
+    "url": "https://www.gaoxiaojob.com/",
+    "link_pattern": "/announcement/detail/\\d+\\.html$",
+    "content_selectors": [
+      ".detail-main-content",
+      ".detail-main"
+    ],
+    "newest_id_first": true,
+    "limit": 50
+  },
+  {
+    "id": "mohrss",
+    "name": "人社部 · 中央事业单位",
+    "category": "政府公告",
+    "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/zpgg/index.html",
+    "link_pattern": "/t\\d{8}_\\d+\\.html",
+    "content_selectors": [
+      ".TRS_Editor",
+      "#Zoom",
+      ".article"
+    ],
+    "limit": 20
+  },
+  {
+    "id": "zafu",
+    "name": "浙江农林大学 · 就业信息",
+    "category": "高校就业网",
+    "url": "https://yjsb.zafu.edu.cn/",
+    "link_pattern": "/info/1092/\\d+\\.htm",
+    "content_selectors": [
+      ".v_news_content",
+      "#vsb_content"
+    ],
+    "limit": 8
+  },
+  {
+    "id": "nju",
+    "name": "南京大学 · 人才招聘",
+    "category": "高校与科研",
+    "url": "https://rczp.nju.edu.cn/",
+    "link_pattern": "/\\d{8}/i\\d+\\.html$",
+    "content_selectors": [
+      ".wp_articlecontent",
+      ".article",
+      ".content"
+    ],
+    "title_pattern": "招聘|招收",
+    "limit": 25
+  },
+  {
+    "id": "cas",
+    "name": "中国科学院 · 官方招聘",
+    "category": "政府公告",
+    "url": "https://www.cas.cn/rc/rczp/",
+    "link_pattern": "/t\\d{8}_\\d+\\.html",
+    "content_selectors": [
+      ".TRS_Editor",
+      ".TRS_UEDITOR",
+      ".article-content"
+    ],
+    "limit": 20
+  }
 ]

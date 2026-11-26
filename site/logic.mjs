@@ -17,11 +17,11 @@ export function filterJobs(jobs,state,now=new Date()){
     if(state.majors.size&&!job.majors.some(x=>state.majors.has(x)))return false;
     if(state.cities.size&&!job.cities.some(x=>state.cities.has(x)))return false;
     if(state.category&&job.category!==state.category)return false;
-    const haystack=[job.title,job.announcementTitle,job.preview,job.source,...job.majors,...job.cities].join(' ').toLowerCase();
+    const haystack=[job.title,job.announcementTitle,job.company,job.industry,job.preview,job.source,...job.majors,...job.cities].join(' ').toLowerCase();
     return state.keyword.trim().toLowerCase().split(/\s+/).filter(Boolean).every(word=>haystack.includes(word));
   });
   if(state.sort==='deadline')result.sort((a,b)=>(a.deadline?.date||'9999').localeCompare(b.deadline?.date||'9999')||(a.deadline?.time||'23:59').localeCompare(b.deadline?.time||'23:59'));
-  else result.sort((a,b)=>(b.publishedAt||'').localeCompare(a.publishedAt||'')||b.firstSeenAt.localeCompare(a.firstSeenAt));
+  else result.sort((a,b)=>(b.updatedAt||b.publishedAt||'').localeCompare(a.updatedAt||a.publishedAt||'')||b.firstSeenAt.localeCompare(a.firstSeenAt));
   return result;
 }
 export function toggleSelection(selected,value,mode){
