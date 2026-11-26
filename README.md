@@ -1,6 +1,6 @@
 # jobs · 每日招聘雷达
 
-[打开网页](https://lifeixiao.github.io/jobs/) · [Gitee 镜像](https://gitee.com/nuistxiao/jobs) · [云端更新记录](https://github.com/lifeiXiao/jobs/actions/workflows/update.yml)
+[Cloudflare 网页](https://xiaojobs.pages.dev/) · [GitHub 网页](https://lifeixiao.github.io/jobs/) · [Gitee 镜像](https://gitee.com/nuistxiao/jobs) · [云端更新记录](https://github.com/lifeiXiao/jobs/actions/workflows/update.yml)
 
 面向各行业企业的招聘雷达：以企业社招、企业校招、实习为主要内容，同时保留高校、事业单位等招聘。按专业 / 岗位方向和工作城市单选 / 多选，站内预览公司、公开薪资、工作经验、职位要求、截止时间和来源，再前往招聘入口。
 
@@ -36,7 +36,7 @@
 
 Gitee 镜像保留完整提交历史。GitHub 的 main 分支提交后，或每日更新任务结束后，`Sync Gitee mirror` 会在 GitHub 托管运行器上将最新代码和数据推送到 Gitee。该镜像任务与本机及 GPT 无关，使用仓库加密 Secret 保存访问凭据。同步采用正常推送，若 Gitee 出现独立修改会停止并报错，不强制覆盖。
 
-Gitee Pages 与 Pages Pro 当前已下线，因此镜像仓库本身不提供网页托管。Cloudflare Pages 可以作为独立的网页入口，使用平台提供的 `pages.dev` 地址，无须先购买域名；国内网络可达性需要部署后实测。
+Gitee Pages 与 Pages Pro 当前已下线，因此镜像仓库本身不提供网页托管。Cloudflare Pages 已发布至 https://xiaojobs.pages.dev/，直接连接 GitHub 的 `main` 分支，自动构建和发布代码及每日数据提交，不依赖 Gitee 镜像同步。使用平台提供的地址，无须购买域名；不同网络的可达性可能有差异。
 
 Cloudflare Pages 接入 GitHub 仓库时使用以下设置：
 
