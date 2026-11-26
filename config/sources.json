@@ -1,9 +1,9 @@
 [
   {"id":"yingjiesheng","name":"应届生求职网","category":"校园招聘","url":"https://www.yingjiesheng.com/other/","link_pattern":"/job-\\d+-\\d+-\\d+\\.html","content_selectors":[".jobIntro","#wordDiv",".job_detail",".main"],"limit":35},
-  {"id":"shiyebian","name":"事业单位招聘考试网","category":"事业单位","url":"https://www.shiyebian.com/","link_pattern":"/(?:xinxi/\\d+|\\d{6}/\\d+)\\.html","content_selectors":[".content","#content",".article-content",".article"],"limit":35},
-  {"id":"gaoxiaojob","name":"高校人才网","category":"高校与科研","url":"https://www.gaoxiaojob.com/","link_pattern":"/announcement/detail/\\d+\\.html","content_selectors":[".detail-main-content",".detail-main"],"limit":50},
+  {"id":"shiyebian","name":"事业单位招聘考试网","category":"事业单位","url":"https://www.shiyebian.com/","link_pattern":"/(?:xinxi/\\d+|\\d{6}/\\d+)\\.html","content_selectors":[".content","#content",".article-content",".article"],"newest_id_first":true,"limit":35},
+  {"id":"gaoxiaojob","name":"高校人才网","category":"高校与科研","url":"https://www.gaoxiaojob.com/","link_pattern":"/announcement/detail/\\d+\\.html$","content_selectors":[".detail-main-content",".detail-main"],"newest_id_first":true,"limit":50},
   {"id":"mohrss","name":"人社部 · 中央事业单位","category":"政府公告","url":"https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/zpgg/index.html","link_pattern":"/t\\d{8}_\\d+\\.html","content_selectors":[".TRS_Editor","#Zoom",".article"],"limit":20},
   {"id":"zafu","name":"浙江农林大学 · 就业信息","category":"高校就业网","url":"https://yjsb.zafu.edu.cn/","link_pattern":"/info/1092/\\d+\\.htm","content_selectors":[".v_news_content","#vsb_content"],"limit":8},
-  {"id":"nju","name":"南京大学 · 人才招聘","category":"高校与科研","url":"https://rczp.nju.edu.cn/","link_pattern":"(?:/postdoctor/|/recruit/|/rczp/|/info/|/\\w+/\\w+/c\\d+a\\d+/page\\.htm|/\\w+/\\w+/\\w+\\.htm)","content_selectors":[".wp_articlecontent",".article",".content"],"title_pattern":"招聘|招收","default_cities":["南京"],"limit":20},
-  {"id":"cas","name":"中科院国家空间科学中心 · 官方招聘","category":"政府公告","url":"https://www.cssar.cas.cn/jrwm2015/","link_pattern":"/t\\d{8}_\\d+\\.html","content_selectors":[".TRS_Editor",".TRS_UEDITOR",".article-content"],"limit":20}
+  {"id":"nju","name":"南京大学 · 人才招聘","category":"高校与科研","url":"https://rczp.nju.edu.cn/","link_pattern":"/\\d{8}/i\\d+\\.html$","content_selectors":[".wp_articlecontent",".article",".content"],"title_pattern":"招聘|招收","limit":25},
+  {"id":"cas","name":"中国科学院 · 官方招聘","category":"政府公告","url":"https://www.cas.cn/rc/rczp/","link_pattern":"/t\\d{8}_\\d+\\.html","content_selectors":[".TRS_Editor",".TRS_UEDITOR",".article-content"],"limit":20}
 ]
