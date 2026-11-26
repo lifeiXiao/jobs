@@ -1,7 +1,7 @@
 import{chromium}from'playwright';
 import assert from'node:assert/strict';
 import fs from'node:fs/promises';
-const browser=await chromium.launch({headless:true});
+const browser=await chromium.launch({headless:true,channel:'chrome'});
 const page=await browser.newPage({viewport:{width:1440,height:1100}});
 const errors=[];page.on('pageerror',e=>errors.push(e.message));
 await page.goto('https://lifeixiao.github.io/jobs/',{waitUntil:'networkidle'});
