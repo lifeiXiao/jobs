@@ -1,0 +1,50 @@
+name: Sync Gitee mirror
+on:
+  push:
+    branches: [main]
+  workflow_run:
+    workflows: ['Update jobs and publish']
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: gitee-jobs-mirror
+  cancel-in-progress: false
+jobs:
+  mirror:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.head_branch == 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Push source, history, and daily data to Gitee
+        env:
+          GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+          GITEE_USER: nuistxiao
+          GIT_TERMINAL_PROMPT: '0'
+        run: |
+          if [ -z "$GITEE_TOKEN" ]; then
+            echo '::error::GITEE_TOKEN is not configured.'
+            exit 1
+          fi
+          task_askpass="$RUNNER_TEMP/jobs-gitee-askpass.sh"
+          cat > "$task_askpass" <<'ASKPASS'
+          #!/usr/bin/env bash
+          case "$1" in
+            *Username*) printf '%s\n' "$GITEE_USER" ;;
+            *Password*) printf '%s\n' "$GITEE_TOKEN" ;;
+          esac
+          ASKPASS
+          chmod 700 "$task_askpass"
+          export GIT_ASKPASS="$task_askpass"
+          git -c credential.helper= push https://gitee.com/nuistxiao/jobs.git HEAD:refs/heads/main
+          git -c credential.helper= push https://gitee.com/nuistxiao/jobs.git --tags
+          task_source_sha=$(git rev-parse HEAD)
+          task_mirror_sha=$(git -c credential.helper= ls-remote https://gitee.com/nuistxiao/jobs.git refs/heads/main | cut -f1)
+          test "$task_source_sha" = "$task_mirror_sha"
+          printf 'Verified matching GitHub / Gitee main: %s\n' "$task_source_sha" >> "$GITHUB_STEP_SUMMARY"

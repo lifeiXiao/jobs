@@ -1,6 +1,6 @@
 # jobs · 每日招聘雷达
 
-[打开网页](https://lifeixiao.github.io/jobs/) · [云端更新记录](https://github.com/lifeiXiao/jobs/actions/workflows/update.yml)
+[打开网页](https://lifeixiao.github.io/jobs/) · [Gitee 镜像](https://gitee.com/nuistxiao/jobs) · [云端更新记录](https://github.com/lifeiXiao/jobs/actions/workflows/update.yml)
 
 面向各行业企业的招聘雷达：以企业社招、企业校招、实习为主要内容，同时保留高校、事业单位等招聘。按专业 / 岗位方向和工作城市单选 / 多选，站内预览公司、公开薪资、工作经验、职位要求、截止时间和来源，再前往招聘入口。
 
@@ -31,6 +31,27 @@
 每个来源先读取 robots.txt，禁止路径和验证页面不采集，不破解验证码，不绕过登录。按域名限速，限制列表页数和详情数量；列表摘要与完整详情区分处理。数据属于来源公开页面的每日有限快照，不代表已穷尽全网所有企业及其全部职位。页面改版后需调整适配器；新增来源只需配置对应适配器，云端日程统一负责更新。
 
 ## 开发与验证
+
+### Gitee 镜像与其他网页托管
+
+Gitee 镜像保留完整提交历史。GitHub 的 main 分支提交后，或每日更新任务结束后，`Sync Gitee mirror` 会在 GitHub 托管运行器上将最新代码和数据推送到 Gitee。该镜像任务与本机及 GPT 无关，使用仓库加密 Secret 保存访问凭据。同步采用正常推送，若 Gitee 出现独立修改会停止并报错，不强制覆盖。
+
+Gitee Pages 与 Pages Pro 当前已下线，因此镜像仓库本身不提供网页托管。Cloudflare Pages 可以作为独立的网页入口，使用平台提供的 `pages.dev` 地址，无须先购买域名；国内网络可达性需要部署后实测。
+
+Cloudflare Pages 接入 GitHub 仓库时使用以下设置：
+
+| 设置 | 值 |
+| --- | --- |
+| Git 仓库 | `lifeiXiao/jobs` |
+| 生产分支 | `main` |
+| 框架 | 无 / None |
+| 构建命令 | `python3 scripts/build.py` |
+| 输出目录 | `_site` |
+| 根目录 | 仓库根目录 |
+
+网页构建只打包已采集的数据，不抓取招聘网站。每天由 GitHub Actions 采集并提交后，Cloudflare 的 Git 集成重新发布。数据提交使用仅针对 GitHub Actions 的 `[skip actions]`，避免阻止外部托管平台的部署。Cloudflare 项目需要先在站点所有者的账号下创建并完成 GitHub 授权；项目尚未创建时，没有可报告的新站点地址。
+
+### 离线检查
 
 ```sh
 pip install -r requirements.txt
