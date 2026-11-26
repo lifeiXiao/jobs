@@ -28,7 +28,7 @@ await page.locator('#reset').click();
 await page.locator('#keyword').fill('____no_such_job____');
 assert.equal(await page.locator('.job-card').count(),0);
 await page.locator('#reset').click();
-assert.equal(Number(await page.locator('#result-count').textContent()),count);
+assert.equal(Number(await page.locator('#result-count').textContent()),Number((await page.locator('#stat-total').textContent()).replaceAll(',','')));
 await page.locator('#only-dated').check();
 await page.locator('#sort').selectOption('deadline');
 if(await page.locator('.job-card').count())assert.ok((await page.locator('.deadline').first().textContent()).includes('截止'));

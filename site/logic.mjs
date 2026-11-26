@@ -21,7 +21,13 @@ export function filterJobs(jobs,state,now=new Date()){
     return state.keyword.trim().toLowerCase().split(/\s+/).filter(Boolean).every(word=>haystack.includes(word));
   });
   if(state.sort==='deadline')result.sort((a,b)=>(a.deadline?.date||'9999').localeCompare(b.deadline?.date||'9999')||(a.deadline?.time||'23:59').localeCompare(b.deadline?.time||'23:59'));
-  else result.sort((a,b)=>(b.updatedAt||b.publishedAt||'').localeCompare(a.updatedAt||a.publishedAt||'')||b.firstSeenAt.localeCompare(a.firstSeenAt));
+  else {
+    result.sort((a,b)=>(b.updatedAt||b.publishedAt||'').localeCompare(a.updatedAt||a.publishedAt||'')||b.firstSeenAt.localeCompare(a.firstSeenAt));
+    const byDay=new Map();
+    for(const job of result){const date=job.updatedAt||job.publishedAt||'';if(!byDay.has(date))byDay.set(date,new Map());const companies=byDay.get(date);const key=job.company||job.id;if(!companies.has(key))companies.set(key,[]);companies.get(key).push(job)}
+    result=[];
+    for(const companies of byDay.values()){let remaining=true;while(remaining){remaining=false;for(const queue of companies.values())if(queue.length){result.push(queue.shift());remaining=true}}}
+  }
   return result;
 }
 export function toggleSelection(selected,value,mode){

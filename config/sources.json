@@ -68,6 +68,43 @@
     ]
   },
   {
+    "id": "ultraai",
+    "name": "职先机 · 个人开发者公开聚合",
+    "category": "企业社招",
+    "adapter": "public_html",
+    "url": "https://jobs.ultraai.site/sources",
+    "list_urls": [
+      "https://jobs.ultraai.site/jobs/social",
+      "https://jobs.ultraai.site/jobs/campus",
+      "https://jobs.ultraai.site/jobs/internship",
+      "https://jobs.ultraai.site/sources"
+    ],
+    "link_pattern": "/jobs/(?!social/|campus/|internship/)[^/]+/[^/?]+$",
+    "per_list_limit": 30,
+    "limit": 100,
+    "apply_selectors": [
+      ".apply-panel a.primary-action",
+      ".mobile-hero-apply"
+    ],
+    "content_selectors": [
+      ".dossier-content"
+    ],
+    "company_selectors": [
+      ".job-company"
+    ],
+    "location_selectors": [
+      ".job-meta"
+    ]
+  },
+  {
+    "id": "mianling",
+    "name": "面灵AI · 开发者公开校招与实习列表",
+    "category": "企业校招",
+    "adapter": "public_table",
+    "url": "https://www.mianlingai.com/jobs/",
+    "limit": 50
+  },
+  {
     "id": "boss",
     "name": "BOSS直聘 · 公开页面",
     "category": "企业社招",

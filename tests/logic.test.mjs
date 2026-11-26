@@ -13,3 +13,4 @@ test('single and multiple selection both work',()=>{const s=new Set(['a']);toggl
 test('deadline sort puts unknowns last',()=>{let s=base();s.sort='deadline';assert.deepEqual(filterJobs(jobs,s,now).map(j=>j.id),['b','a','d'])});
 test('date is Shanghai even across UTC day boundary',()=>assert.equal(chinaDay(new Date('2026-11-25T17:00:00Z')),'2026-11-26'));
 test('keyword handles markup as plain text',()=>{let s=base();s.keyword='<script>';assert.equal(filterJobs(jobs,s,now).length,0)});
+test('same-day listings show different companies before repeating one',()=>{const many=[...jobs.slice(0,2),job('e',['计算机类'],['南京'],'2026-11-30')];many[0].company='甲';many[1].company='甲';many[2].company='乙';const result=filterJobs(many,base(),now);assert.deepEqual(result.map(j=>j.company),['甲','乙','甲'])});

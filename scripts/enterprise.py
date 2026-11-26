@@ -88,10 +88,8 @@ def collect_job5156(config,client,old,now,errors):
             for anchor in soup.select('a[href*="/job_"]'):
                 url=urljoin(entry,anchor['href'])
                 if url in records:continue
-                container=anchor
-                for parent in anchor.parents:
-                    if parent.select_one('.com_name') and parent.select_one('.job-card_message'):
-                        container=parent;break
+                container=anchor.find_parent(class_='home-hot-job-item') or anchor.find_parent(class_='job_only_box')
+                if container is None:continue
                 card=container.select_one('.job_card')
                 if not card:continue
                 def text(selector):
@@ -101,6 +99,24 @@ def collect_job5156(config,client,old,now,errors):
                 records[url]=normalize(config,old,now,title=title,url=url,company=text('.com_name'),body=text('.job-card_message'),location=text('.job-card_site'),salary=text('.job-card_posName span'),degree=text('.job-card_degreeStr'))
         except Exception as exc:errors.append(str(exc)[:150])
     return list(records.values())
+
+def collect_public_table(config,client,old,now,errors):
+    soup=client.get(config['url']);records=[]
+    for tr in soup.select('tbody tr')[:config.get('limit',50)]:
+        cells=tr.find_all('td',recursive=False)
+        if len(cells)<7:continue
+        company=clean(cells[0].contents[0].strip()) if cells[0].contents and isinstance(cells[0].contents[0],str) else cells[0].get_text(' ',strip=True)
+        title=cells[1].get_text(' ',strip=True);location=cells[2].get_text(' ',strip=True)
+        kind=cells[4].get_text(' ',strip=True)
+        if not title or not company:continue
+        category='实习' if '实习' in kind else '企业校招'
+        item=normalize(config,old,now,title=title,url=config['url'],company=company,location=location,body='招聘对象：'+cells[3].get_text(' ',strip=True)+'\n公开列表未提供完整职位描述，详情及投递入口请到来源查看。',category=category)
+        item['sourceRecordId']=hashlib.sha256((company+'|'+title+'|'+location+'|'+category).encode()).hexdigest()[:24]
+        item['id']=hashlib.sha256((config['id']+item['sourceRecordId']).encode()).hexdigest()[:20]
+        item['previewKind']='公开列表线索 · 完整详情和投递可能需要登录来源'
+        item['sourcePublishedText']=cells[5].get_text(' ',strip=True)
+        records.append(item)
+    return records
 
 def jsonld_postings(soup):
     output=[]
@@ -122,10 +138,13 @@ def collect_public_html(config,client,old,now,errors):
     for entry in config.get('list_urls',[config['url']]):
         try:
             soup=client.get(entry)
+            entry_count=0
             for a in soup.select('a[href]'):
                 url=urljoin(entry,a['href']);title=clean(a.get('title') or a.get_text(' ',strip=True))
                 if re.search(config['link_pattern'],url) and 2<=len(title)<=130:
                     found[url]=title
+                    entry_count+=1
+                    if entry_count>=config.get('per_list_limit',1000):break
         except Exception as exc:errors.append(str(exc)[:140])
     for url,title in list(found.items())[:config.get('limit',50)]:
         try:
@@ -133,18 +152,31 @@ def collect_public_html(config,client,old,now,errors):
             if prior and prior.get('detailFetchedAt','')[:10]==now[:10] and prior.get('company'):
                 records.extend(prior['_siblings']);continue
             soup=client.get(url);ld=jsonld_postings(soup)
+            hero=soup.select_one('[data-job-status]')
+            if hero and hero.get('data-job-status') not in ('active','open'):continue
+            apply_node=next((soup.select_one(sel) for sel in config.get('apply_selectors',[]) if soup.select_one(sel)),None)
+            apply_url=urljoin(url,apply_node['href']) if apply_node and apply_node.get('href') else url
             if ld:
                 for row in ld:
                     company=row.get('hiringOrganization') or {}
                     company=company.get('name','') if isinstance(company,dict) else str(company)
+                    identifier=row.get('identifier') or {}
+                    if company in ('MEG','ACG','WXG','IEG','CDG','CSIG','TEG') and isinstance(identifier,dict):
+                        employer=re.sub(r'校园招聘|社会招聘|招聘','',identifier.get('name',''))
+                        if employer:company=employer+' · '+company
                     loc=row.get('jobLocation') or [];loc=loc if isinstance(loc,list) else [loc]
                     places=[]
                     for l in loc:
                         address=l.get('address') or {}
                         if isinstance(address,dict):places.append(address.get('addressLocality') or address.get('addressRegion') or '')
-                    body=read_text(BeautifulSoup(row.get('description') or '','html.parser'))
+                    raw=row.get('description') or row.get('responsibilities') or ''
+                    if row.get('qualifications') and row['qualifications'] not in raw:raw+='\n任职要求：'+row['qualifications']
+                    body=read_text(BeautifulSoup(raw,'html.parser'))
                     due=deadline('报名截止日期：'+str(row['validThrough'])) if row.get('validThrough') else deadline(body)
-                    records.append(normalize(config,old,now,title=row.get('title') or title,url=url,company=company,body=body,location=' '.join(places),published=row.get('datePosted'),due=due))
+                    category='实习' if row.get('employmentType')=='INTERN' or hero and hero.get('data-job-type')=='internship' else '企业校招' if hero and hero.get('data-job-type')=='campus' else None
+                    item=normalize(config,old,now,title=row.get('title') or title,url=url,company=company,body=body,location=' '.join(places),published=row.get('datePosted'),due=due,category=category,original_url=apply_url)
+                    item['previewKind']='公开聚合页摘录 · 原始官网投递可追溯'
+                    records.append(item)
                 continue
             for junk in soup.select('script,style,nav,header,footer,aside'):junk.decompose()
             node=next((soup.select_one(sel) for sel in config.get('content_selectors',[]) if soup.select_one(sel)),soup.body or soup)
@@ -167,7 +199,7 @@ def collect_enterprise(config,old,now):
     client=SourceClient();errors=[]
     status={'id':config['id'],'name':config['name'],'category':config.get('category','企业社招'),'url':config['url'],'checkedAt':now,'status':'error','count':0}
     try:
-        adapter={'zhaopin':collect_zhaopin,'tencent':collect_tencent,'job5156':collect_job5156,'public_html':collect_public_html}[config['adapter']]
+        adapter={'zhaopin':collect_zhaopin,'tencent':collect_tencent,'job5156':collect_job5156,'public_table':collect_public_table,'public_html':collect_public_html}[config['adapter']]
         records=adapter(config,client,old,now,errors)
         status.update(status=('partial' if errors else 'ok') if records else 'error',count=len(records),detailsOk=len(records),failedDetails=len(errors),message=f'已读取 {len(records)} 条企业岗位' if records else '未取得公开岗位数据，继续保留其他渠道信息',errors=errors[:5])
         return records,status
@@ -194,6 +226,7 @@ def deduplicate(records):
     ordered=sorted(records,key=lambda j:(j.get('sourceId')=='tencent',bool(j.get('company')),len(j.get('preview',''))),reverse=True)
     for record in ordered:
         key=original_key(record.get('originalUrl') or record['url'])
+        if record.get('sourceRecordId'):key+='#record='+record['sourceRecordId']
         company=normalized(record.get('company',''))
         if record.get('kind')=='position' and not company:
             key+='#role='+normalized(record['title'])
