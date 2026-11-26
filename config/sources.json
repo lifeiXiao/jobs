@@ -1,0 +1,7 @@
+[
+  {"id":"yingjiesheng","name":"应届生求职网","category":"校园招聘","url":"https://www.yingjiesheng.com/other/","link_pattern":"/job-\\d+-\\d+-\\d+\\.html","content_selectors":[".jobIntro","#wordDiv",".job_detail",".main"],"limit":35},
+  {"id":"shiyebian","name":"事业单位招聘网","category":"事业单位","url":"https://www.shiyebian.net/zhaopin/","link_pattern":"/\\d{6}/\\d+\\.html","content_selectors":[".content","#content",".article-content"],"limit":35},
+  {"id":"gaoxiaojob","name":"高校人才网","category":"高校与科研","url":"https://www.gaoxiaojob.com/announcement/","link_pattern":"/announcement/detail/\\d+\\.html","content_selectors":[".article-content",".announcement-content",".content-detail",".article"],"limit":35},
+  {"id":"mohrss","name":"人社部 · 中央事业单位","category":"政府公告","url":"https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/zpgg/index.html","link_pattern":"/t\\d{8}_\\d+\\.html","content_selectors":[".TRS_Editor","#Zoom",".article"],"limit":20},
+  {"id":"zafu","name":"浙江农林大学 · 就业信息","category":"高校就业网","url":"https://yjsb.zafu.edu.cn/xxfw/jyxx.htm","link_pattern":"/info/\\d+/\\d+\\.htm","content_selectors":[".v_news_content","#vsb_content",".content"],"limit":20}
+]

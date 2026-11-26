@@ -5,13 +5,14 @@ from urllib.parse import urljoin
 from urllib.robotparser import RobotFileParser
 
 SOURCES = [
- 'https://www.yingjiesheng.com/other/',
- 'https://www.yingjiesheng.com/commend/',
- 'https://www.shiyebian.net/zhaopin/',
- 'https://www.gaoxiaojob.com/announcement/',
- 'https://yjsb.zafu.edu.cn/xxfw/jyxx.htm',
- 'https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/zpgg/index.html',
- 'https://jshrss.jiangsu.gov.cn/col/col57210/index.html',
+ 'https://www.shiyebian.net/',
+ 'https://www.gaoxiaojob.com/',
+ 'https://www.gaoxiaojob.com/announcement/detail/447236.html',
+ 'https://yjsb.zafu.edu.cn/',
+ 'https://yjsb.zafu.edu.cn/info/1092/10947.htm',
+ 'https://search.mohrss.gov.cn/was5/web/search?channelid=202558&orderby=-docreltime',
+ 'https://www.yingjiesheng.com/',
+ 'https://www.gwyoo.com/shiye/',
 ]
 def probe(url):
  out=[url]
@@ -31,7 +32,7 @@ def probe(url):
   soup=BeautifulSoup(r.text,'html.parser')
   out.append('TITLE '+str(soup.title))
   selected=[a for a in soup.select('a[href]') if len(a.get_text(' ',strip=True))>12]
-  for a in selected[:35]:
+  for a in selected[:65]:
    out.append(str(a)[:500]+' PARENT '+a.parent.get_text(' ',strip=True)[:350])
  except Exception as e: out.append(str(e))
  return '\n'.join(out)
