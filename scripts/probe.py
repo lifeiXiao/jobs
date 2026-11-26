@@ -9,14 +9,13 @@ from urllib.robotparser import RobotFileParser
 if os.environ.get('GITHUB_ACTIONS')!='true' or os.environ.get('RUNNER_ENVIRONMENT')!='github-hosted':
  raise SystemExit('Source inspection runs only on GitHub-hosted runners.')
 SOURCES = [
- 'https://offerseek.ai/',
- 'https://www.juhejob.com/',
- 'https://www.liepin.com/zhaopin/',
- 'https://mnowpick.nowcoder.com/m/intern/center?recruitType=1',
- 'https://www.ncss.cn/student/jobs/index.html',
- 'https://www.shixiseng.com/interns',
- 'https://www.iguopin.com/',
- 'https://www.zhipin.com/c100010000/',
+ 'https://offerseek.ai/jobs',
+ 'https://offerseek.ai/jobs/internship',
+ 'https://offerseek.ai/jobs/354687',
+ 'https://www.juhejob.com/job/162714.html',
+ 'https://www.juhejob.com/job/2046069.html',
+ 'https://www.juhejob.com/social',
+ 'https://www.juhejob.com/campus',
 ]
 def probe(url):
  out=[url]
