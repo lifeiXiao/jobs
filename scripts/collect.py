@@ -135,7 +135,7 @@ class SourceClient:
     def __init__(self):
         self.session=requests.Session(); self.session.headers['User-Agent']=UA
         self.robots={}; self.last={}
-    def get(self,url):
+    def request(self,url):
         parsed=urlsplit(url)
         if parsed.scheme not in ('https','http'): raise ValueError('不支持的链接')
         origin=f'{parsed.scheme}://{parsed.netloc}'
@@ -159,7 +159,11 @@ class SourceClient:
         text=response.text
         if CHALLENGE.search(text[:15000]) or (re.search(r'验证码|Access Denied',text[:5000],re.I) and len(text)<20000):
             raise RuntimeError('来源需要人工验证，已跳过')
-        return BeautifulSoup(text,'html.parser')
+        return response
+    def get(self,url):
+        return BeautifulSoup(self.request(url).text,'html.parser')
+    def json(self,url):
+        return self.request(url).json()
 
 def canonical(url):
     p=urlsplit(url)
@@ -244,12 +248,15 @@ def main():
     sources=json.loads((ROOT/'config/sources.json').read_text(encoding='utf-8'))
     fresh=[]; statuses=[]
     with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
-        futures=[pool.submit(collect_source,c,old,now) for c in sources]
+        from enterprise import collect_enterprise, deduplicate
+        futures=[pool.submit(collect_enterprise if c.get('adapter') else collect_source,c,old,now) for c in sources]
         for future in futures:
             jobs,status=future.result(); fresh.extend(jobs); statuses.append(status)
             print(f"{status['name']}: {status['status']} / {len(jobs)} / {status.get('message')}",flush=True)
     any_success=any(s['detailsOk']>0 for s in statuses if 'detailsOk' in s)
-    result={'schemaVersion':1,'lastAttemptAt':now,'lastSuccessfulAt':now if any_success else previous.get('lastSuccessfulAt'),'schedule':'每天北京时间 08:23；失败后 14:23 重试','jobs':merge(previous['jobs'],fresh,now),'sources':statuses}
+    merged=merge(previous['jobs'],fresh,now)
+    records,duplicate_count=deduplicate(merged)
+    result={'schemaVersion':2,'lastAttemptAt':now,'lastSuccessfulAt':now if any_success else previous.get('lastSuccessfulAt'),'schedule':'每天北京时间 08:23；14:23 补充同步','duplicateCount':duplicate_count,'jobs':records,'sources':statuses}
     path.parent.mkdir(exist_ok=True)
     tmp=path.with_suffix('.tmp'); tmp.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); tmp.replace(path)
     summary=os.environ.get('GITHUB_STEP_SUMMARY')
