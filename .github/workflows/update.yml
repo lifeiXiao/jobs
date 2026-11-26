@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['site/**', 'scripts/**', 'tests/**', 'config/**', 'requirements.txt', '.github/workflows/update.yml']
+    paths: ['site/**', 'scripts/collect.py', 'scripts/build.py', 'tests/**', 'config/**', 'requirements.txt', '.github/workflows/update.yml']
 concurrency:
   group: jobs-production
   cancel-in-progress: false
