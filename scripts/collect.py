@@ -22,6 +22,13 @@ DATE_RE = re.compile(r'(20\d{2})\s*[年./-]\s*(\d{1,2})\s*[月./-]\s*(\d{1,2})�
 def clean(text):
     return re.sub(r'[ \t\r\f\v]+', ' ', text).strip()
 
+def read_text(node):
+    copy=BeautifulSoup(str(node),'html.parser')
+    for tag in copy.select('p,li,tr,h1,h2,h3,h4,h5,h6,div'):
+        tag.append('\n')
+    for tag in copy.select('br'): tag.replace_with('\n')
+    return '\n'.join(clean(x) for x in copy.get_text(' ',strip=False).splitlines() if clean(x))
+
 def dates(text):
     found=[]
     for m in DATE_RE.finditer(text):
@@ -65,7 +72,8 @@ def deadline(text):
     return {'kind':'unknown','date':None,'time':None,'label':'原文未注明 · 请查看岗位表','evidence':None}
 
 def classify(text, title=''):
-    requirement_lines=[line for line in text.splitlines() if re.search(r'专业|学科|研究方向|任职要求|岗位要求',line)]
+    lines=text.splitlines()
+    requirement_lines=[(' '.join(lines[i:i+3]) if len(line)<15 else line) for i,line in enumerate(lines) if re.search(r'专业|学科|研究方向|任职要求|岗位要求',line)]
     scope='\n'.join(requirement_lines) or title
     majors=[group for group,terms in TAXONOMY['majors'].items() if any(word in scope for word in terms)]
     return majors or ['专业待确认']
@@ -82,7 +90,7 @@ def publication(soup,context):
     for query in ['meta[property="article:published_time"]','meta[name="pubdate"]','meta[name="publishdate"]','meta[name="PubDate"]']:
         tag=soup.select_one(query)
         if tag and dates(tag.get('content','')): return dates(tag['content'])[0][1]
-    for line in soup.get_text('\n',strip=True).splitlines():
+    for line in read_text(soup).splitlines():
         if re.search(r'发布时间|发布日期|发表时间|更新日期',line) and dates(line): return dates(line)[0][1]
     ds=dates(context)
     return ds[0][1] if ds else None
@@ -164,6 +172,7 @@ def collect_source(config,old,now):
             title=clean(a.get('title') or a.get_text(' ',strip=True))
             if urlsplit(url).hostname!=urlsplit(config['url']).hostname: continue
             if not re.search(config['link_pattern'],url) or len(title)<8: continue
+            if config.get('title_pattern') and not re.search(config['title_pattern'],title): continue
             if re.search(r'拟聘|录用公示|成绩|面试名单|考试大纲|笔试通知|取消.*岗位',title): continue
             parent=a.find_parent('tr') or a.find_parent('li') or a.parent
             if url not in found or len(title)>len(found[url][0]): found[url]=(title,clean(parent.get_text(' ',strip=True)))
@@ -175,10 +184,12 @@ def collect_source(config,old,now):
             try:
                 soup=client.get(url)
                 pub=publication(soup,context)
+                header_text='\n'.join(n.get_text(' ',strip=True) for n in soup.select('.detail-header,.detail-content,.detail-header-container'))
                 node=article(soup,config.get('content_selectors',[]))
-                text=node.get_text('\n',strip=True)
+                text=read_text(node)
                 if len(text)<80: raise RuntimeError('公告内容过短')
                 due=deadline(text)
+                if due['kind']=='unknown' and header_text: due=deadline(header_text)
                 attachments=[]
                 for a in node.select('a[href]'):
                     href=urljoin(url,a['href'])
@@ -188,6 +199,7 @@ def collect_source(config,old,now):
                 rows=positions(node)
                 for i,(role,body) in enumerate(rows or [(title,text)]):
                     item={**base,'id':hashlib.sha256((url+'#'+str(i)+'#'+role).encode()).hexdigest()[:20],'title':role,'kind':'position' if rows else 'announcement','majors':classify(body,title),'cities':cities(body,title),'preview':preview(body),'degree':next((d for d in ['博士','硕士','本科','大专','专科','中专','高中'] if d in body),'原文未注明')}
+                    if item['cities']==['城市待确认'] and config.get('default_cities'): item['cities']=config['default_cities']
                     if rows and deadline(body)['kind']!='unknown': item['deadline']=deadline(body)
                     item['salary']=next(iter(re.findall(r'[^\n。]{0,15}(?:薪资|薪酬|年薪|月薪)[^\n。]{0,65}',body)),'待遇见原文')
                     output.append(item)
