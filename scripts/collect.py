@@ -17,6 +17,8 @@ ROOT = Path(__file__).resolve().parents[1]
 TAXONOMY = json.loads((ROOT/'config/taxonomy.json').read_text(encoding='utf-8'))
 TZ = dt.timezone(dt.timedelta(hours=8))
 UA = 'JobsRadar/1.0 (+https://github.com/lifeiXiao/jobs)'
+PARSER_VERSION = 2
+CHALLENGE = re.compile(r'var\s+arg1\s*=|EO_Bot_Ssid|acw_sc__|"l1"\s*:\s*"var|Just a moment|访问验证|安全验证',re.I)
 DATE_RE = re.compile(r'(20\d{2})\s*[年./-]\s*(\d{1,2})\s*[月./-]\s*(\d{1,2})日?')
 
 def clean(text):
@@ -154,7 +156,7 @@ class SourceClient:
         if len(response.content)>4_000_000: raise RuntimeError('页面超出采集大小限制')
         if response.encoding in (None,'ISO-8859-1'): response.encoding=response.apparent_encoding
         text=response.text
-        if re.search(r'验证码|访问验证|安全验证|Access Denied|Just a moment',text[:5000],re.I) and len(text)<20000:
+        if CHALLENGE.search(text[:15000]) or (re.search(r'验证码|Access Denied',text[:5000],re.I) and len(text)<20000):
             raise RuntimeError('来源需要人工验证，已跳过')
         return BeautifulSoup(text,'html.parser')
 
@@ -173,13 +175,16 @@ def collect_source(config,old,now):
             if urlsplit(url).hostname!=urlsplit(config['url']).hostname: continue
             if not re.search(config['link_pattern'],url) or len(title)<8: continue
             if config.get('title_pattern') and not re.search(config['title_pattern'],title): continue
-            if re.search(r'拟聘|录用公示|成绩|面试名单|考试大纲|笔试通知|取消.*岗位',title): continue
+            if re.search(r'拟聘|录用公示|成绩|面试名单|考试大纲|笔试通知|取消.*岗位|招聘日报|公告汇总|报名入口汇总',title): continue
             parent=a.find_parent('tr') or a.find_parent('li') or a.parent
             if url not in found or len(title)>len(found[url][0]): found[url]=(title,clean(parent.get_text(' ',strip=True)))
         if not found: raise RuntimeError('未发现公告链接，来源页面可能已改版或需要登录')
-        for url,(title,context) in list(found.items())[:config.get('limit',30)]:
+        candidates=list(found.items())
+        if config.get('newest_id_first'):
+            candidates.sort(key=lambda pair:int(re.findall(r'\d+',urlsplit(pair[0]).path)[-1]),reverse=True)
+        for url,(title,context) in candidates[:config.get('limit',30)]:
             prior=old.get(url)
-            if prior and prior.get('detailFetchedAt') and (dt.datetime.fromisoformat(now)-dt.datetime.fromisoformat(prior['detailFetchedAt'])).total_seconds()<6*86400:
+            if prior and prior.get('parserVersion')==PARSER_VERSION and prior.get('detailFetchedAt') and (dt.datetime.fromisoformat(now)-dt.datetime.fromisoformat(prior['detailFetchedAt'])).total_seconds()<20*3600:
                 output.extend(prior['_siblings']); details_ok+=1; continue
             try:
                 soup=client.get(url)
@@ -187,7 +192,7 @@ def collect_source(config,old,now):
                 header_text='\n'.join(n.get_text(' ',strip=True) for n in soup.select('.detail-header,.detail-content,.detail-header-container'))
                 node=article(soup,config.get('content_selectors',[]))
                 text=read_text(node)
-                if len(text)<80: raise RuntimeError('公告内容过短')
+                if len(text)<80 or len(re.findall(r'[\u4e00-\u9fff]',text))<40: raise RuntimeError('未取得可验证的中文公告正文')
                 due=deadline(text)
                 if due['kind']=='unknown' and header_text: due=deadline(header_text)
                 attachments=[]
@@ -195,7 +200,7 @@ def collect_source(config,old,now):
                     href=urljoin(url,a['href'])
                     if re.search(r'\.(?:xlsx?|pdf|docx?|zip)(?:\?|$)',href,re.I) and urlsplit(href).scheme in ('https','http'):
                         attachments.append({'name':clean(a.get_text(' ',strip=True)) or '岗位附件','url':href})
-                base={'announcementTitle':title,'url':url,'sourceId':config['id'],'source':config['name'],'category':config['category'],'publishedAt':pub,'firstSeenAt':prior.get('firstSeenAt',now) if prior else now,'lastSeenAt':now,'detailFetchedAt':now,'deadline':due,'attachments':attachments[:8]}
+                base={'parserVersion':PARSER_VERSION,'announcementTitle':title,'url':url,'sourceId':config['id'],'source':config['name'],'category':config['category'],'publishedAt':pub,'firstSeenAt':prior.get('firstSeenAt',now) if prior else now,'lastSeenAt':now,'detailFetchedAt':now,'deadline':due,'attachments':attachments[:8]}
                 rows=positions(node)
                 for i,(role,body) in enumerate(rows or [(title,text)]):
                     item={**base,'id':hashlib.sha256((url+'#'+str(i)+'#'+role).encode()).hexdigest()[:20],'title':role,'kind':'position' if rows else 'announcement','majors':classify(body,title),'cities':cities(body,title),'preview':preview(body),'degree':next((d for d in ['博士','硕士','本科','大专','专科','中专','高中'] if d in body),'原文未注明')}
@@ -207,14 +212,15 @@ def collect_source(config,old,now):
             except Exception as exc:
                 errors.append(f'{title[:28]}：{str(exc)[:100]}')
                 if prior: output.extend(prior['_siblings'])
-        status.update(status='ok' if not errors else 'partial',count=len(output),discovered=len(found),detailsOk=details_ok,failedDetails=len(errors),message='已同步公开公告' if not errors else '部分详情读取失败，保留已有数据',errors=errors[:5])
+        status.update(status=('ok' if not errors else 'partial') if details_ok else 'error',count=len(output),discovered=len(found),detailsOk=details_ok,failedDetails=len(errors),message='已同步公开公告' if not errors else ('部分详情读取失败，保留已有数据' if details_ok else '无法读取详情，来源可能需要访问验证'),errors=errors[:5])
     except Exception as exc:
         status['message']=str(exc)[:200]
     return output,status
 
 def merge(previous,fresh,now):
     cutoff=(dt.datetime.fromisoformat(now)-dt.timedelta(days=120)).date().isoformat()
-    merged={x['id']:x for x in previous}
+    refreshed={x.get('url') for x in fresh if x.get('url')}
+    merged={x['id']:x for x in previous if x.get('url') not in refreshed}
     merged.update({x['id']:x for x in fresh})
     items=[x for x in merged.values() if (x.get('publishedAt') or x['firstSeenAt'][:10])>=cutoff]
     for x in items: x.pop('_siblings',None)
@@ -226,6 +232,7 @@ def main():
     now=dt.datetime.now(TZ).isoformat(timespec='seconds')
     path=ROOT/'data/jobs.json'
     previous=json.loads(path.read_text(encoding='utf-8')) if path.exists() else {'jobs':[],'sources':[]}
+    previous['jobs']=[j for j in previous['jobs'] if not CHALLENGE.search(j.get('preview','')) and not re.search(r'招聘日报|公告汇总|报名入口汇总',j.get('announcementTitle',''))]
     grouped={}
     for x in previous['jobs']: grouped.setdefault(x['url'],[]).append(x)
     old={url:{**siblings[0],'_siblings':siblings} for url,siblings in grouped.items()}
