@@ -43,5 +43,10 @@ class EnterpriseTests(unittest.TestCase):
     def test_distinct_job_ids_on_one_platform_are_preserved(self):
         items,n=deduplicate([job('https://board/1'),job('https://board/2')])
         self.assertEqual((len(items),n),(2,0))
+    def test_same_title_in_one_announcement_keeps_separate_row_ids(self):
+        a=job('https://school/announcement/1',company='',title='专任教师')
+        b=job('https://school/announcement/1',company='',title='专任教师')
+        a['id']='row1';b['id']='row2';b['majors']=['数学与统计']
+        items,n=deduplicate([a,b]);self.assertEqual((len(items),n),(2,0))
 
 if __name__=='__main__':unittest.main()

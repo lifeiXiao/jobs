@@ -229,7 +229,7 @@ def deduplicate(records):
         if record.get('sourceRecordId'):key+='#record='+record['sourceRecordId']
         company=normalized(record.get('company',''))
         if record.get('kind')=='position' and not company:
-            key+='#role='+normalized(record['title'])
+            key+='#role='+record['id']
         known_cities=[c for c in record.get('cities',[]) if '待确认' not in c]
         identity=(company,normalized(record['title']),tuple(sorted(known_cities)),record.get('employmentType') or record.get('category')) if company and known_cities and record.get('kind')=='position' else None
         index=seen_url.get(key)
