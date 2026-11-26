@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-26T13:57:43+08:00",
-  "lastSuccessfulAt": "2026-11-26T13:57:43+08:00",
+  "lastAttemptAt": "2026-11-26T14:00:30+08:00",
+  "lastSuccessfulAt": "2026-11-26T14:00:30+08:00",
   "schedule": "每天北京时间 08:23；失败后 14:23 重试",
   "jobs": [
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "中国医学科学院基础医学研究所北京协和医学院基础学院2026年派遣人员招聘启事",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448362.html",
       "sourceId": "gaoxiaojob",
@@ -13,14 +13,14 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-26",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
-        "kind": "date",
-        "date": "2026-11-26",
+        "kind": "unknown",
+        "date": null,
         "time": null,
-        "label": "2026-11-26（时刻未注明）",
-        "evidence": "发布时间：2026-11-26 截止日期：详见正文 学历要求：大专及以上 所属省份： 北京 工作地点： 北京 报名方式： 站内投递 栏目分类： 科技人才 北京科研 需求学科（供参考）： 生物学 , 基础医学 , 统计学 , 公共卫生与预防医学 , 生物医学工程 , 药学 , 化学 , 专业不限 展开"
+        "label": "原文未注明 · 请查看岗位表",
+        "evidence": null
       },
       "attachments": [],
       "id": "2a9da46d497187a077bd",
@@ -40,7 +40,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "深圳理工大学未来医学中心2026年副主任招聘公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448361.html",
       "sourceId": "gaoxiaojob",
@@ -48,14 +48,14 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-26",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
-        "kind": "date",
-        "date": "2026-11-26",
+        "kind": "unknown",
+        "date": null,
         "time": null,
-        "label": "2026-11-26（时刻未注明）",
-        "evidence": "发布时间：2026-11-26 截止日期：详见正文 学历要求：博士研究生 所属省份： 广东 工作地点： 深圳 报名方式： 站内投递 栏目分类： 高校招聘 广东高校 深圳高校 需求学科（供参考）： 临床医学 , 基础医学 展开"
+        "label": "原文未注明 · 请查看岗位表",
+        "evidence": null
       },
       "attachments": [],
       "id": "7994664b0761cdaaea59",
@@ -73,7 +73,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "上海科技大学免疫化学研究所李俊课题组2026年招聘博士后",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448360.html",
       "sourceId": "gaoxiaojob",
@@ -81,8 +81,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-26",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "open",
         "date": null,
@@ -1434,7 +1434,7 @@
       "salary": "展，为引进人才提供极具竞争力的薪酬待遇与科研启动经费"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "北京大学天然药物及仿生药物全国重点实验室2026年800兆核磁平台实验技术岗位招聘启事",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448357.html",
       "sourceId": "gaoxiaojob",
@@ -1442,8 +1442,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-26",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-03",
@@ -1467,7 +1467,7 @@
       "salary": "京大学医学部事业编制人员待遇，薪酬按国家相关规定执行"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "科技部科技评估中心2026年博士后研究人员招收简章",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448356.html",
       "sourceId": "gaoxiaojob",
@@ -1475,8 +1475,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-26",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -1501,7 +1501,7 @@
       "salary": "进站后，薪酬按国家有关标准及中心相关管 理规定执行"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "招聘公告YJ20260525法学院特任助理研究员",
       "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261126/i432821.html",
       "sourceId": "nju",
@@ -1509,8 +1509,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-26",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -1533,7 +1533,7 @@
       "salary": "薪酬待遇和相关工作与生活条件配套"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "招聘公告YJ20260225地理与海洋科学学院博士后",
       "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261126/i432839.html",
       "sourceId": "nju",
@@ -1541,8 +1541,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-26",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -1565,7 +1565,7 @@
       "salary": "薪酬待遇和相关工作与生活条件配套"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "招聘公告YJ20260239大气科学学院博士后",
       "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261126/i432819.html",
       "sourceId": "nju",
@@ -1573,8 +1573,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-26",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -1597,7 +1597,7 @@
       "salary": "薪酬待遇和相关工作与生活条件配套"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "西安市第八十三中学北校区2026年招聘公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448351.html",
       "sourceId": "gaoxiaojob",
@@ -1605,8 +1605,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-05",
@@ -1629,7 +1629,7 @@
       "salary": "06薪资待遇"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "西昌医学高等专科学校2026年下半年公开考试招聘13名工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448330.html",
       "sourceId": "gaoxiaojob",
@@ -1637,8 +1637,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-11-20",
@@ -1661,7 +1661,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "浙江省金华市轨道交通控股集团运营有限公司2026年招聘52名应届毕业生公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448321.html",
       "sourceId": "gaoxiaojob",
@@ -1669,8 +1669,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "open",
         "date": null,
@@ -1698,7 +1698,7 @@
       "salary": "六、薪酬及福利待遇"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "四川外国语大学附属外国语学校2026年秋季引进教师",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448309.html",
       "sourceId": "gaoxiaojob",
@@ -1706,8 +1706,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-10",
@@ -1735,7 +1735,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "福州市第二总医院2026年11月选拔27届选培生公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448307.html",
       "sourceId": "gaoxiaojob",
@@ -1743,8 +1743,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-16",
@@ -1767,7 +1767,7 @@
       "salary": "由用人单位给予相应的工作安排和薪酬待遇"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "苏州科技大学机械工程学院2026年公开招聘5名工作人员公告（第二批）",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448302.html",
       "sourceId": "gaoxiaojob",
@@ -1775,8 +1775,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "open",
         "date": null,
@@ -1804,7 +1804,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "武汉传媒学院图书馆大悟分馆2026年科员（工作地点：孝感市大悟县）招聘启事",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448288.html",
       "sourceId": "gaoxiaojob",
@@ -1812,14 +1812,14 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
-        "kind": "date",
-        "date": "2026-11-25",
+        "kind": "unknown",
+        "date": null,
         "time": null,
-        "label": "2026-11-25（时刻未注明）",
-        "evidence": "发布时间：2026-11-25 截止日期：详见正文 学历要求：本科及以上 所属省份： 湖北 工作地点： 武汉 报名方式： 站内投递 栏目分类： 高校招聘 湖北高校 武汉高校 需求学科（供参考）： 信息资源管理（图书馆、情报与档案管理） , 公共管理学 , 工商管理 , 中国语言文学 , 管理科学与工程 , 计算机科学与技术 展开"
+        "label": "原文未注明 · 请查看岗位表",
+        "evidence": null
       },
       "attachments": [],
       "id": "c5a3228d7e803d47f2e2",
@@ -1837,7 +1837,7 @@
       "salary": "按照学校薪酬制度执行"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "成都市金牛区卫生健康局所属事业单位2026年第四季度公开招聘65名编外工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448261.html",
       "sourceId": "gaoxiaojob",
@@ -1845,8 +1845,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-11-29",
@@ -1882,7 +1882,7 @@
       "salary": "劳动合同，有关待遇在招聘单位的薪酬制度框架内面议"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广应科科技园（广东）有限公司2026年招聘公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448222.html",
       "sourceId": "gaoxiaojob",
@@ -1890,14 +1890,14 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
-        "kind": "date",
-        "date": "2026-11-25",
+        "kind": "unknown",
+        "date": null,
         "time": null,
-        "label": "2026-11-25（时刻未注明）",
-        "evidence": "发布时间：2026-11-25 截止日期：详见正文 学历要求：本科及以上 所属省份： 广东 工作地点： 肇庆 报名方式： 站内投递 栏目分类： 企业招聘 广东高校 需求学科（供参考）： 应用经济学 , 工商管理 , 公共管理学 , 管理科学与工程 , 专业未分类 , 新闻传播学 , 中国语言文学 展开"
+        "label": "原文未注明 · 请查看岗位表",
+        "evidence": null
       },
       "attachments": [],
       "id": "97238c7394bb0333986b",
@@ -1917,7 +1917,7 @@
       "salary": "二、 薪酬 福利"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "福建省莆田第十五中学2026年招聘教师公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448216.html",
       "sourceId": "gaoxiaojob",
@@ -1925,14 +1925,14 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
-        "kind": "date",
-        "date": "2026-11-25",
+        "kind": "unknown",
+        "date": null,
         "time": null,
-        "label": "2026-11-25（时刻未注明）",
-        "evidence": "发布时间：2026-11-25 截止日期：详见正文 学历要求：本科及以上 所属省份： 福建 工作地点： 莆田 报名方式： 其他 栏目分类： 中小学校 福建中小学 需求学科（供参考）： 展开"
+        "label": "原文未注明 · 请查看岗位表",
+        "evidence": null
       },
       "attachments": [],
       "id": "37f6e7fa18ce682d49b8",
@@ -1949,7 +1949,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "山西工商学院护理学院2026年教师招聘公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448200.html",
       "sourceId": "gaoxiaojob",
@@ -1957,8 +1957,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "open",
         "date": null,
@@ -1981,7 +1981,7 @@
       "salary": "四、 薪酬福利"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "上海科技大学信息学院2026年招聘行政主管（项目聘用）",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448199.html",
       "sourceId": "gaoxiaojob",
@@ -1989,14 +1989,14 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
-        "kind": "date",
-        "date": "2026-11-25",
+        "kind": "unknown",
+        "date": null,
         "time": null,
-        "label": "2026-11-25（时刻未注明）",
-        "evidence": "发布时间：2026-11-25 截止日期：详见正文 学历要求：硕士研究生及以上 所属省份： 上海 工作地点： 上海 报名方式： 网上系统 栏目分类： 高校招聘 上海高校 需求学科（供参考）： 电子科学与技术 , 信息与通信工程 , 控制科学与工程 , 计算机科学与技术 展开"
+        "label": "原文未注明 · 请查看岗位表",
+        "evidence": null
       },
       "attachments": [],
       "id": "39ceec78c689c1e9035f",
@@ -2014,7 +2014,7 @@
       "salary": "个人具体情况，提供具有竞争力的薪酬、津贴和福利"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "山西工商学院计算机信息工程学院2026年教师招聘公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448198.html",
       "sourceId": "gaoxiaojob",
@@ -2022,8 +2022,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "open",
         "date": null,
@@ -2049,7 +2049,7 @@
       "salary": "四、 薪酬福利"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "重庆市农业科学院2026年第四季度公开招聘27名工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448180.html",
       "sourceId": "gaoxiaojob",
@@ -2057,8 +2057,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-10-31",
@@ -2082,7 +2082,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "上海科技大学财务处2026年招聘出纳岗",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448176.html",
       "sourceId": "gaoxiaojob",
@@ -2090,14 +2090,14 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
-        "kind": "date",
-        "date": "2026-11-25",
+        "kind": "unknown",
+        "date": null,
         "time": null,
-        "label": "2026-11-25（时刻未注明）",
-        "evidence": "发布时间：2026-11-25 截止日期：详见正文 学历要求：硕士研究生及以上 所属省份： 上海 工作地点： 上海 报名方式： 网上系统 栏目分类： 高校招聘 上海高校 需求学科（供参考）： 金融学 , 审计 , 工商管理 , 应用经济学 展开"
+        "label": "原文未注明 · 请查看岗位表",
+        "evidence": null
       },
       "attachments": [],
       "id": "a5cdc8ffd18fefc3066a",
@@ -2115,7 +2115,7 @@
       "salary": "个人具体情况，提供具有竞争力的薪酬、津贴和福利"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "中国社会科学院大学2027年度公开招聘13名专业技术人员公告（第一批）",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448164.html",
       "sourceId": "gaoxiaojob",
@@ -2123,8 +2123,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-08",
@@ -2164,7 +2164,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "湘江实验室2026年下半年招聘12名人才公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448153.html",
       "sourceId": "gaoxiaojob",
@@ -2172,8 +2172,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-03-31",
@@ -2196,7 +2196,7 @@
       "salary": "（二）薪酬待遇"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "湖北省荆州中学和湖北省沙市中学2027年赴高校引进22名人才公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448152.html",
       "sourceId": "gaoxiaojob",
@@ -2204,8 +2204,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-04",
@@ -2231,7 +2231,7 @@
       "salary": "行岗位管理，执行有关政策规定的薪酬待遇"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "浙江省海宁市卫生健康系统2026年11月公开招聘事业单位卫技人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448148.html",
       "sourceId": "gaoxiaojob",
@@ -2239,8 +2239,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-11-20",
@@ -2268,7 +2268,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "山东省淄博市教育局所属事业单位2026年公开招聘27届部属公费师范毕业生公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448145.html",
       "sourceId": "gaoxiaojob",
@@ -2276,8 +2276,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-04",
@@ -2300,7 +2300,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "天津海泰控股集团有限公司2026年度招聘20名见习生公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448139.html",
       "sourceId": "gaoxiaojob",
@@ -2308,8 +2308,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-11-20",
@@ -2335,7 +2335,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "四川省眉山市关于2026年下半年考试招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448138.html",
       "sourceId": "gaoxiaojob",
@@ -2343,8 +2343,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-11-20",
@@ -2367,7 +2367,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "四川省南充市事业单位关于2026年下半年公开招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448126.html",
       "sourceId": "gaoxiaojob",
@@ -2375,8 +2375,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-11-20",
@@ -2399,7 +2399,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "福建省宁德市市属学校2027年公开招聘20名紧缺急需及高层次人才公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448120.html",
       "sourceId": "gaoxiaojob",
@@ -2407,8 +2407,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-08-31",
@@ -2448,7 +2448,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "贵州省城乡规划设计研究院有限责任公司2026年第二批面向社会公开招聘22名工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448118.html",
       "sourceId": "gaoxiaojob",
@@ -2456,8 +2456,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-11-30",
@@ -2483,7 +2483,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -2491,8 +2491,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -2515,7 +2515,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -2523,8 +2523,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -2547,7 +2547,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -2555,8 +2555,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -2579,7 +2579,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -2587,8 +2587,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -2611,7 +2611,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -2619,8 +2619,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -2643,7 +2643,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -2651,8 +2651,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -2675,7 +2675,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -2683,8 +2683,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -2707,7 +2707,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -2715,8 +2715,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -2739,7 +2739,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -2747,8 +2747,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -2771,7 +2771,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -2779,8 +2779,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -2803,7 +2803,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -2811,8 +2811,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -2835,7 +2835,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -2843,8 +2843,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -2867,7 +2867,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -2875,8 +2875,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -2899,7 +2899,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -2907,8 +2907,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -2931,7 +2931,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -2939,8 +2939,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -2963,7 +2963,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -2971,8 +2971,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -2995,7 +2995,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3003,8 +3003,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3027,7 +3027,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3035,8 +3035,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3059,7 +3059,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3067,8 +3067,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3091,7 +3091,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3099,8 +3099,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3123,7 +3123,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3131,8 +3131,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3155,7 +3155,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3163,8 +3163,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3187,7 +3187,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3195,8 +3195,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3219,7 +3219,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3227,8 +3227,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3251,7 +3251,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3259,8 +3259,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3283,7 +3283,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3291,8 +3291,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3315,7 +3315,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3323,8 +3323,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3347,7 +3347,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3355,8 +3355,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3379,7 +3379,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3387,8 +3387,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3411,7 +3411,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3419,8 +3419,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3443,7 +3443,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3451,8 +3451,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3475,7 +3475,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3483,8 +3483,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3507,7 +3507,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3515,8 +3515,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3539,7 +3539,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3547,8 +3547,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3571,7 +3571,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3579,8 +3579,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3603,7 +3603,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3611,8 +3611,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3635,7 +3635,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3643,8 +3643,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3667,7 +3667,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3675,8 +3675,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3699,7 +3699,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3707,8 +3707,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3731,7 +3731,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "广州医科大学附属市八医院2027年招聘工作人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448117.html",
       "sourceId": "gaoxiaojob",
@@ -3739,8 +3739,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-05-25",
@@ -3763,7 +3763,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "清华大学精密仪器系黄磊课题组2026年博士后招聘公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448076.html",
       "sourceId": "gaoxiaojob",
@@ -3771,8 +3771,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-06-30",
@@ -3795,7 +3795,7 @@
       "salary": "六、薪资待遇"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "福建省漳州市2026年校园招聘18名紧缺急需教育人才方案（北京师范大学、华中师范大学、闽南师范大学专场）",
       "url": "https://www.gaoxiaojob.com/announcement/detail/448074.html",
       "sourceId": "gaoxiaojob",
@@ -3803,8 +3803,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-08-31",
@@ -3857,7 +3857,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "浙江大学国际联合商学院2026年行政岗位招聘简章",
       "url": "https://www.gaoxiaojob.com/announcement/detail/447926.html",
       "sourceId": "gaoxiaojob",
@@ -3865,8 +3865,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-13",
@@ -3889,7 +3889,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "海纳英才圆梦科大！中国科大第十一届墨子论坛诚邀海内外优秀青年学者携手相聚安徽合肥",
       "url": "https://www.gaoxiaojob.com/announcement/detail/447925.html",
       "sourceId": "gaoxiaojob",
@@ -3897,8 +3897,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-08",
@@ -3926,12 +3926,12 @@
       "cities": [
         "城市待确认"
       ],
-      "preview": "学历要求：博士研究生\n汽车设计与制造专业人员岗招聘\n轨道交通专业人员岗招聘\n纺织/服装专业人员岗招聘",
+      "preview": "学历要求：博士研究生\n食品/粮食专业人员岗招聘",
       "degree": "博士",
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "福州外语外贸学院2026年实验室管理人员招聘公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/447924.html",
       "sourceId": "gaoxiaojob",
@@ -3939,8 +3939,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-11",
@@ -3965,7 +3965,7 @@
       "salary": "1. 薪酬待遇：根据应聘者个人情况定级后确定，具体依据《福州外语外贸学院薪酬管理办法》执行；"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "福州外语外贸学院2026年档案室管理人员招聘公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/447922.html",
       "sourceId": "gaoxiaojob",
@@ -3973,8 +3973,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-02",
@@ -3997,7 +3997,7 @@
       "salary": "1. 薪酬待遇：根据应聘者个人情况定级后确定，具体依据《福州外语外贸学院薪酬管理办法》执行；"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "郑州西亚斯学院育人导师（辅导员）招聘公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/447921.html",
       "sourceId": "gaoxiaojob",
@@ -4005,14 +4005,14 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
-        "kind": "date",
-        "date": "2026-11-25",
+        "kind": "unknown",
+        "date": null,
         "time": null,
-        "label": "2026-11-25（时刻未注明）",
-        "evidence": "发布时间：2026-11-25 截止日期：详见正文 学历要求：硕士研究生及以上 所属省份： 河南 工作地点： 郑州 报名方式： 站内投递 栏目分类： 高校招聘 河南高校 需求学科（供参考）： 马克思主义理论 , 教育学 , 心理学 , 新闻传播学 , 工商管理 展开"
+        "label": "原文未注明 · 请查看岗位表",
+        "evidence": null
       },
       "attachments": [],
       "id": "0ee72935535903fe571d",
@@ -4031,7 +4031,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "首都医学科学创新中心王宇涛实验室2026年博士后/助理研究员招聘公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/447920.html",
       "sourceId": "gaoxiaojob",
@@ -4039,8 +4039,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "open",
         "date": null,
@@ -4063,7 +4063,7 @@
       "salary": "验和能力，提供具有市场竞争力的薪酬（详情面谈）；"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "中山大学“跨域无人系统与集群智能”团队2026年诚聘博士后和青年教师",
       "url": "https://www.gaoxiaojob.com/announcement/detail/447919.html",
       "sourceId": "gaoxiaojob",
@@ -4071,8 +4071,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "open",
         "date": null,
@@ -4131,7 +4131,7 @@
       "salary": "1.薪酬待遇： 领军人才及以上 待遇一事一议，高水平成果奖励上不封顶"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "合肥工业大学2026年学科博士后招聘公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/447923.html",
       "sourceId": "gaoxiaojob",
@@ -4139,14 +4139,14 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
-        "kind": "date",
-        "date": "2026-11-25",
+        "kind": "unknown",
+        "date": null,
         "time": null,
-        "label": "2026-11-25（时刻未注明）",
-        "evidence": "发布时间：2026-11-25 截止日期：详见正文 学历要求：博士研究生 所属省份： 安徽 工作地点： 合肥 报名方式： 站内投递 栏目分类： 高校招聘 安徽高校 需求学科（供参考）： 机械工程 , 材料科学与工程 , 电气工程 , 控制科学与工程 , 信息与通信工程 , 计算机科学与技术 , 土木工程与土木水利 , 化学 , 化学工程与技术 , 马克思主义理论 , 工商管理 , 管理科学与工程 , 仪器科学与技术 , 建筑学 , 地质学 , 环境科学与工"
+        "label": "原文未注明 · 请查看岗位表",
+        "evidence": null
       },
       "attachments": [],
       "id": "42e389cb03f31b77d523",
@@ -4158,6 +4158,7 @@
         "电气与自动化",
         "机械类",
         "土木与建筑",
+        "经济与金融",
         "工商与公共管理",
         "生物与化学",
         "数学与统计",
@@ -4168,12 +4169,12 @@
       "cities": [
         "城市待确认"
       ],
-      "preview": "学历要求：博士研究生\n机电工程师/专业人员岗招聘",
+      "preview": "学历要求：博士研究生\n中职教师岗（专业课类）招聘\n冶金工程师/专业人员岗招聘\n环保工程师/专业人员岗招聘\n印刷/包装专业人员岗招聘",
       "degree": "博士",
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "聚英才 | 2027年先进光源国际青年学者交流会启邀！",
       "url": "https://www.gaoxiaojob.com/announcement/detail/447917.html",
       "sourceId": "gaoxiaojob",
@@ -4181,8 +4182,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-10",
@@ -4208,7 +4209,7 @@
       "salary": "2. 薪酬待遇"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "中共宁波市委党校2026年公开招聘教师公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/447916.html",
       "sourceId": "gaoxiaojob",
@@ -4216,8 +4217,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-20",
@@ -4240,7 +4241,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "招聘公告YJGC20260830前沿科学学院特任助理研究员",
       "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261125/i432788.html",
       "sourceId": "nju",
@@ -4248,8 +4249,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -4272,7 +4273,7 @@
       "salary": "薪酬待遇和相关工作与生活条件配套"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "招聘公告SZYJ202600401南京赫尔辛基大气与地球系统科学学院博士后",
       "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261125/i432787.html",
       "sourceId": "nju",
@@ -4280,8 +4281,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "open",
         "date": null,
@@ -4305,7 +4306,7 @@
       "salary": "薪酬待遇和相关工作与生活条件配套"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "招聘公告XZ2026-439环境学院科研人员",
       "url": "https://rczp.nju.edu.cn//glgwjqt/20261125/i432785.html",
       "sourceId": "nju",
@@ -4313,8 +4314,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-25",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-01",
@@ -4337,7 +4338,7 @@
       "salary": "用工性质及薪酬"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "四川省气象部门事业单位2026年下半年公开招聘应届毕业生（国家气象系统编制）公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/447910.html",
       "sourceId": "gaoxiaojob",
@@ -4345,8 +4346,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-24",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-11-20",
@@ -4369,7 +4370,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "成都新都投资集团有限公司2026年招聘13名市场运营部副部长等岗位人员公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/447909.html",
       "sourceId": "gaoxiaojob",
@@ -4377,8 +4378,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-24",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-11-19",
@@ -4414,7 +4415,7 @@
       "salary": "薪酬"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "西安市曲江第一中学2026年11月招聘教师启事",
       "url": "https://www.gaoxiaojob.com/announcement/detail/447907.html",
       "sourceId": "gaoxiaojob",
@@ -4422,8 +4423,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-24",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-06",
@@ -4446,7 +4447,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "西南医科大学附属中医医院2027年招聘工作人员简章",
       "url": "https://www.gaoxiaojob.com/announcement/detail/447906.html",
       "sourceId": "gaoxiaojob",
@@ -4454,8 +4455,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-24",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-11-29",
@@ -4478,7 +4479,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "浙江省瑞安市医疗服务集团及部分医疗卫生单位2026年下半年面向社会公开招聘61名优秀毕业生公告",
       "url": "https://www.gaoxiaojob.com/announcement/detail/447901.html",
       "sourceId": "gaoxiaojob",
@@ -4486,8 +4487,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-24",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-01",
@@ -4523,7 +4524,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "华中科技大学附属学校2026年11月公开招聘34名中学教师启事",
       "url": "https://www.gaoxiaojob.com/announcement/detail/447895.html",
       "sourceId": "gaoxiaojob",
@@ -4531,8 +4532,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-24",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-11-29",
@@ -4555,7 +4556,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "招聘公告XZ2026-437电子科学与工程学院专业、技术人员",
       "url": "https://rczp.nju.edu.cn//glgwjqt/20261124/i432728.html",
       "sourceId": "nju",
@@ -4563,8 +4564,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-24",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-23",
@@ -4587,7 +4588,7 @@
       "salary": "用工性质及薪酬"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "招聘公告SZXZ2026-098前沿科学学院办公室文员",
       "url": "https://rczp.nju.edu.cn//glgwjqt/20261124/i432720.html",
       "sourceId": "nju",
@@ -4595,8 +4596,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-24",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-07",
@@ -4620,7 +4621,7 @@
       "salary": "用工性质及薪酬"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "招聘公告SZXZ2026-100前沿科学学院助理",
       "url": "https://rczp.nju.edu.cn//glgwjqt/20261124/i432718.html",
       "sourceId": "nju",
@@ -4628,8 +4629,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-24",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-03",
@@ -4870,7 +4871,7 @@
       "salary": "1.学校根据博士后类型提供薪酬（税前，包含需博士后个人缴纳的社会保险、公积金和补充医疗保险等），其中行 A每年35万，行B每年30万，致A、致B、境外博士后每年"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "招聘公告YJ20260326现代生物研究院博士后",
       "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261124/i432701.html",
       "sourceId": "nju",
@@ -4878,8 +4879,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-24",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -4902,7 +4903,7 @@
       "salary": "薪酬待遇和相关工作与生活条件配套"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "招聘公告YJ20260324现代生物研究院博士后",
       "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261124/i432700.html",
       "sourceId": "nju",
@@ -4910,8 +4911,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-24",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -4934,7 +4935,7 @@
       "salary": "薪酬待遇和相关工作与生活条件配套"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "招聘公告SZXZ2026-096南京赫尔辛基大气与地球系统科学学院专业、技术人员",
       "url": "https://rczp.nju.edu.cn//glgwjqt/20261123/i432684.html",
       "sourceId": "nju",
@@ -4942,8 +4943,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-23",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-23",
@@ -5082,7 +5083,7 @@
       "salary": "薪资不低于16万元/年、租房补贴4万元/年"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年11月企事业招聘信息七",
       "url": "https://yjsb.zafu.edu.cn/info/1092/10947.htm",
       "sourceId": "zafu",
@@ -5090,8 +5091,8 @@
       "category": "高校就业网",
       "publishedAt": "2026-11-23",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -5114,7 +5115,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "南京大学数字经济与管理学院2027年度准聘长聘岗位（事业编制）招聘公告",
       "url": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261123/i432681.html",
       "sourceId": "nju",
@@ -5122,8 +5123,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-23",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -5147,7 +5148,7 @@
       "salary": "薪酬待遇和相关工作与生活条件配套"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "招聘公告YJ20260404化学学院博士后",
       "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261123/i432687.html",
       "sourceId": "nju",
@@ -5155,8 +5156,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-23",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -5297,7 +5298,7 @@
       "salary": "号）确定薪酬待遇，提供相应人才津贴 10 万 -100 万每年、安家费 30 万 -200 万、科研条件建设费 15 万 -1000 万，并提"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "南京大学大学外语部特任讲师招聘公告",
       "url": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261119/i432508.html",
       "sourceId": "nju",
@@ -5305,8 +5306,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-19",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -5363,7 +5364,7 @@
       "salary": "四川省有关规定执行工资、津贴等薪酬待遇"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "南京大学物理学院2026年度准聘长聘岗位（事业编制）招聘公告",
       "url": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261118/i432500.html",
       "sourceId": "nju",
@@ -5371,8 +5372,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-18",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -5396,7 +5397,7 @@
       "salary": "薪酬待遇和相关工作与生活条件配套"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "南京大学商学院2026年度准聘长聘岗位（事业编制）招聘公告",
       "url": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261118/i432494.html",
       "sourceId": "nju",
@@ -5404,8 +5405,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-18",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -5430,7 +5431,7 @@
       "salary": "薪酬待遇和相关工作与生活条件配套"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "南京大学人工智能学院2027年度准聘长聘岗位（事业编制）招聘公告",
       "url": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261118/i432483.html",
       "sourceId": "nju",
@@ -5438,8 +5439,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-18",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "open",
         "date": null,
@@ -5463,7 +5464,7 @@
       "salary": "薪酬待遇和相关工作与生活条件配套"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "招聘公告SZYJ20260064先进制造学院特任副研究员",
       "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261118/i432485.html",
       "sourceId": "nju",
@@ -5471,8 +5472,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-18",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -5495,7 +5496,7 @@
       "salary": "薪酬待遇和相关工作与生活条件配套"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "招聘公告YJ202606283医学院特任副研究员",
       "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261118/i432484.html",
       "sourceId": "nju",
@@ -5503,8 +5504,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-18",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -5529,7 +5530,7 @@
       "salary": "薪酬待遇和相关工作与生活条件配套"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "招聘公告BW20261113地球科学与工程学院专业、技术人员",
       "url": "https://rczp.nju.edu.cn//glgwjqt/20261117/i432448.html",
       "sourceId": "nju",
@@ -5537,8 +5538,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-17",
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-17",
@@ -5672,7 +5673,7 @@
       "salary": ". 为各类人才提供富有竞争力的薪资待遇，提供适度宽松的科研和工作环境"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "招聘公告YJGC202608362生物医学工程学院特任助理研究员",
       "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261116/i432391.html",
       "sourceId": "nju",
@@ -5680,8 +5681,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-16",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -5836,7 +5837,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年11月企事业招聘信息六",
       "url": "https://yjsb.zafu.edu.cn/info/1092/10942.htm",
       "sourceId": "zafu",
@@ -5844,8 +5845,8 @@
       "category": "高校就业网",
       "publishedAt": "2026-11-13",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -5962,7 +5963,7 @@
       "salary": "综合年薪120～150"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "招聘公告SZYJ202600145生物医学工程学院特任助理研究员",
       "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261112/i432287.html",
       "sourceId": "nju",
@@ -5970,8 +5971,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-11-12",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -6533,11 +6534,11 @@
       "lastSeenAt": "2026-11-26T13:50:13+08:00",
       "detailFetchedAt": "2026-11-26T13:50:13+08:00",
       "deadline": {
-        "kind": "date",
-        "date": "2026-11-09",
+        "kind": "unknown",
+        "date": null,
         "time": null,
-        "label": "2026-11-09（时刻未注明）",
-        "evidence": "发布时间：2026-11-09 截止日期：详见正文 学历要求：博士研究生 所属省份： 北京 工作地点： 北京 报名方式： 站内投递 栏目分类： 科技人才 北京科研 需求学科（供参考）： 化学 , 环境科学与工程 , 大气科学 , 材料科学与工程 , 轻工技术与工程 , 物理学 , 生物工程 , 生物学 , 人工智能 , 电子科学与技术 , 生物医学工程 展开"
+        "label": "原文未注明 · 请查看岗位表",
+        "evidence": null
       },
       "attachments": [
         {
@@ -6559,7 +6560,7 @@
       "salary": "提供一流的研究平台、有竞争力的薪酬待遇，积极推荐并协助申请“博新计划”、中国科学院特别研究助理资助项目、北京分子科学国家研究中心博士后项目；"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年11月企事业招聘信息五",
       "url": "https://yjsb.zafu.edu.cn/info/1092/10941.htm",
       "sourceId": "zafu",
@@ -6567,8 +6568,8 @@
       "category": "高校就业网",
       "publishedAt": "2026-11-09",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -6779,7 +6780,7 @@
       "salary": "①极具竞争力的薪酬、安家费和科研启动经费，安家科研所需全力保障；"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年11月企事业招聘信息四",
       "url": "https://yjsb.zafu.edu.cn/info/1092/10940.htm",
       "sourceId": "zafu",
@@ -6787,8 +6788,8 @@
       "category": "高校就业网",
       "publishedAt": "2026-11-06",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "open",
         "date": null,
@@ -6847,7 +6848,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年11月企事业招聘信息三",
       "url": "https://yjsb.zafu.edu.cn/info/1092/10939.htm",
       "sourceId": "zafu",
@@ -6855,8 +6856,8 @@
       "category": "高校就业网",
       "publishedAt": "2026-11-04",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -6981,7 +6982,7 @@
       "salary": "家、天津市共同提供具有竞争力的薪酬、福利待遇，优厚的科研启动经费及良好的工作和生活条件"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "南京大学工程管理学院2026年度准聘长聘岗位（事业编制）招聘公告",
       "url": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261030/i428029.html",
       "sourceId": "nju",
@@ -6989,8 +6990,8 @@
       "category": "高校与科研",
       "publishedAt": "2026-10-30",
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -7165,7 +7166,7 @@
       "salary": "提供丰厚的年薪、购房补贴、科研启动支持"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "福州双福高速公路有限责任公司2026年正式合同制人员招聘公告",
       "url": "https://www.shiyebian.com/xinxi/49716.html",
       "sourceId": "shiyebian",
@@ -7173,8 +7174,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-03",
@@ -7206,7 +7207,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年昆明市官渡区人民政府小板桥街道办事处招聘社区专职工作者公告",
       "url": "https://www.shiyebian.com/xinxi/49715.html",
       "sourceId": "shiyebian",
@@ -7214,8 +7215,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-08",
@@ -7248,7 +7249,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2027年衢州市体育运动学校招聘事业编制优秀在职教师公告",
       "url": "https://www.shiyebian.com/xinxi/49714.html",
       "sourceId": "shiyebian",
@@ -7256,8 +7257,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-04",
@@ -7285,7 +7286,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2027年衢州市体育运动学校招聘事业编制优秀在职教师公告",
       "url": "https://www.shiyebian.com/xinxi/49714.html",
       "sourceId": "shiyebian",
@@ -7293,8 +7294,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-04",
@@ -7323,7 +7324,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2027年衢州市体育运动学校招聘事业编制优秀在职教师公告",
       "url": "https://www.shiyebian.com/xinxi/49714.html",
       "sourceId": "shiyebian",
@@ -7331,8 +7332,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-04",
@@ -7361,7 +7362,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2027年衢州市体育运动学校招聘事业编制优秀在职教师公告",
       "url": "https://www.shiyebian.com/xinxi/49714.html",
       "sourceId": "shiyebian",
@@ -7369,8 +7370,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-04",
@@ -7398,7 +7399,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2027年衢州市体育运动学校招聘事业编制优秀在职教师公告",
       "url": "https://www.shiyebian.com/xinxi/49714.html",
       "sourceId": "shiyebian",
@@ -7406,8 +7407,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-04",
@@ -7435,7 +7436,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2027年衢州市体育运动学校招聘事业编制优秀在职教师公告",
       "url": "https://www.shiyebian.com/xinxi/49714.html",
       "sourceId": "shiyebian",
@@ -7443,8 +7444,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-04",
@@ -7473,7 +7474,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2027年衢州市体育运动学校招聘事业编制优秀在职教师公告",
       "url": "https://www.shiyebian.com/xinxi/49714.html",
       "sourceId": "shiyebian",
@@ -7481,8 +7482,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-04",
@@ -7510,7 +7511,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2027年衢州市体育运动学校招聘事业编制优秀在职教师公告",
       "url": "https://www.shiyebian.com/xinxi/49714.html",
       "sourceId": "shiyebian",
@@ -7518,8 +7519,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-04",
@@ -7547,7 +7548,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2027年衢州市教育局直属学校招聘事业编制教育人才公告",
       "url": "https://www.shiyebian.com/xinxi/49713.html",
       "sourceId": "shiyebian",
@@ -7555,8 +7556,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:54:37+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-04",
@@ -7733,7 +7734,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年绥芬河镇人民政府公开招聘协管员的公告（8人）",
       "url": "https://www.shiyebian.com/xinxi/49747.html",
       "sourceId": "shiyebian",
@@ -7741,8 +7742,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-11-27",
@@ -7774,7 +7775,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年11月深圳市城市管理和综合执法局公开选聘事业单位工作人员公告（3人）",
       "url": "https://www.shiyebian.com/xinxi/49746.html",
       "sourceId": "shiyebian",
@@ -7782,8 +7783,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-04",
@@ -7823,7 +7824,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2024年利川市事业单位专项公开招聘“三支一扶”服务期满高校毕业生公告（9人）",
       "url": "https://www.shiyebian.com/xinxi/49745.html",
       "sourceId": "shiyebian",
@@ -7831,8 +7832,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -7868,7 +7869,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年盘锦辽滨沿海经济技术开发区关于公开联合招录消防员的公告（73人）",
       "url": "https://www.shiyebian.com/xinxi/49744.html",
       "sourceId": "shiyebian",
@@ -7876,8 +7877,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-25",
@@ -7914,7 +7915,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "鞍山市教育局面向2027届毕业生校园招聘公告（130人）",
       "url": "https://www.shiyebian.com/xinxi/49743.html",
       "sourceId": "shiyebian",
@@ -7922,8 +7923,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2027-08-31",
@@ -7967,7 +7968,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年沙坡头区公开招聘社区工作者公告（14人）",
       "url": "https://www.shiyebian.com/xinxi/49742.html",
       "sourceId": "shiyebian",
@@ -7975,14 +7976,14 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
-        "kind": "date",
-        "date": "2026-11-28",
+        "kind": "unknown",
+        "date": null,
         "time": null,
-        "label": "2026-11-28（时刻未注明）",
-        "evidence": "1.报名时间。2026年11月28日（星期六）9:00至12月4日（星期五）18:00，报名时间截止后，不再受理报名申请。"
+        "label": "原文未注明 · 请查看岗位表",
+        "evidence": null
       },
       "attachments": [],
       "id": "8406bd8c77fa3bcb9eec",
@@ -7999,7 +8000,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年郁南县公开招聘专职安全员公告（7人）",
       "url": "https://www.shiyebian.com/xinxi/49741.html",
       "sourceId": "shiyebian",
@@ -8007,8 +8008,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-02",
@@ -8040,7 +8041,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年大冶市东风路街道社区卫生服务中心公开招聘合同制康复技师公告（2人）",
       "url": "https://www.shiyebian.com/xinxi/49740.html",
       "sourceId": "shiyebian",
@@ -8048,8 +8049,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-01",
@@ -8077,7 +8078,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年湖南财政经济学院第二批专任教师公开招聘公告（36人）",
       "url": "https://www.shiyebian.com/xinxi/49739.html",
       "sourceId": "shiyebian",
@@ -8085,8 +8086,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-31",
@@ -8122,7 +8123,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年岳麓山工业创新中心公开招聘公告（50人）",
       "url": "https://www.shiyebian.com/xinxi/49738.html",
       "sourceId": "shiyebian",
@@ -8130,8 +8131,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-31",
@@ -8170,7 +8171,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年吉林省省直事业单位公开招聘工作人员公告（15号）（33人）",
       "url": "https://www.shiyebian.com/xinxi/49737.html",
       "sourceId": "shiyebian",
@@ -8178,8 +8179,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-04",
@@ -8211,7 +8212,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年吉林省事业单位岗位专招日喀则籍高校毕业生公告（202人）",
       "url": "https://www.shiyebian.com/xinxi/49736.html",
       "sourceId": "shiyebian",
@@ -8219,8 +8220,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-11-30",
@@ -8243,7 +8244,7 @@
       "salary": "省岗位聘用、岗位管理、服务期、薪酬社保等属地政策，由吉林省人社部门按当地政策解释"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2027年新华通讯社公开招聘应届高校毕业生公告（142人）",
       "url": "https://www.shiyebian.com/xinxi/49735.html",
       "sourceId": "shiyebian",
@@ -8251,8 +8252,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -8280,7 +8281,7 @@
       "salary": "订事业单位聘用合同并享受相应的薪酬和福利待遇；总社岗位38-68、属地经营分支机构岗位22-50的聘用人员与各单位签订劳动合同并享受相应的薪酬和福利待遇"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年下半年黑龙江中医药大学附属第二医院公开招聘博士人员公告（1人）",
       "url": "https://www.shiyebian.com/xinxi/49734.html",
       "sourceId": "shiyebian",
@@ -8288,8 +8289,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-03",
@@ -8329,7 +8330,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年下半年黑龙江中医药大学附属第二医院哈南分院暨黑龙江省老年医院公开招聘博士人员公告（6人）",
       "url": "https://www.shiyebian.com/xinxi/49733.html",
       "sourceId": "shiyebian",
@@ -8337,8 +8338,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-03",
@@ -8378,7 +8379,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年海南省药品监督管理局直属单位公开考核招聘事业编制人员公告（第1号）（1人）",
       "url": "https://www.shiyebian.com/xinxi/49732.html",
       "sourceId": "shiyebian",
@@ -8386,8 +8387,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-11-26",
@@ -8444,7 +8445,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年度北京市科学技术研究院急需紧缺人才引进公告",
       "url": "https://www.shiyebian.com/xinxi/49731.html",
       "sourceId": "shiyebian",
@@ -8452,8 +8453,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -8481,7 +8482,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年西城区卫生健康系统第三批事业单位公开招聘工作人员公告（42人）",
       "url": "https://www.shiyebian.com/xinxi/49730.html",
       "sourceId": "shiyebian",
@@ -8489,8 +8490,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -8518,7 +8519,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年首都师范大学人才引进公告（第五批）",
       "url": "https://www.shiyebian.com/xinxi/49729.html",
       "sourceId": "shiyebian",
@@ -8526,8 +8527,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -8558,7 +8559,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年亳州市大学生乡村医生专项计划招聘公告",
       "url": "https://www.shiyebian.com/xinxi/49728.html",
       "sourceId": "shiyebian",
@@ -8566,8 +8567,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-11",
@@ -8603,7 +8604,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年金华市东新控股集团有限公司专业技术人才引进公告",
       "url": "https://www.shiyebian.com/xinxi/49727.html",
       "sourceId": "shiyebian",
@@ -8611,8 +8612,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-04",
@@ -8652,7 +8653,7 @@
       "salary": "根据金华市东新控股集团有限公司薪酬管理办法执行，按照国家相关规定对聘用人员缴纳五险一金"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年11月玉溪市水利电力勘测设计院招聘专业技术人员公告",
       "url": "https://www.shiyebian.com/xinxi/49726.html",
       "sourceId": "shiyebian",
@@ -8660,8 +8661,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-03",
@@ -8691,7 +8692,7 @@
       "salary": "四、薪酬待遇"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "玉溪农业职业技术学院2026年招聘编外人员公告",
       "url": "https://www.shiyebian.com/xinxi/49725.html",
       "sourceId": "shiyebian",
@@ -8699,8 +8700,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-01",
@@ -8728,7 +8729,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年济源产城融合示范区公益性岗位招聘公告（第五批）",
       "url": "https://www.shiyebian.com/xinxi/49724.html",
       "sourceId": "shiyebian",
@@ -8736,8 +8737,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -8765,7 +8766,7 @@
       "salary": "四、工作期限和薪酬待遇"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年下半年杭州第一技师学院招聘教师公告",
       "url": "https://www.shiyebian.com/xinxi/49723.html",
       "sourceId": "shiyebian",
@@ -8773,8 +8774,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -8797,7 +8798,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年11月福清市“智慧福清”管理服务中心招聘公告",
       "url": "https://www.shiyebian.com/xinxi/49722.html",
       "sourceId": "shiyebian",
@@ -8805,8 +8806,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -8834,7 +8835,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年下半年温州市市级事业单位招聘幼儿教师公告",
       "url": "https://www.shiyebian.com/xinxi/49721.html",
       "sourceId": "shiyebian",
@@ -8842,8 +8843,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -8866,7 +8867,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年11月武义县卫生健康局下属医疗单位博士研究生招聘公告",
       "url": "https://www.shiyebian.com/xinxi/49720.html",
       "sourceId": "shiyebian",
@@ -8874,8 +8875,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -8903,7 +8904,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年11月武义县卫生健康局下属医疗单位博士研究生招聘公告",
       "url": "https://www.shiyebian.com/xinxi/49720.html",
       "sourceId": "shiyebian",
@@ -8911,8 +8912,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -8940,7 +8941,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年11月武义县卫生健康局下属医疗单位博士研究生招聘公告",
       "url": "https://www.shiyebian.com/xinxi/49720.html",
       "sourceId": "shiyebian",
@@ -8948,8 +8949,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -8977,7 +8978,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年11月南通市农业农村局招聘政府购买服务岗位人员公告",
       "url": "https://www.shiyebian.com/xinxi/49719.html",
       "sourceId": "shiyebian",
@@ -8985,8 +8986,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-11-25",
@@ -9014,7 +9015,7 @@
       "salary": "应聘录用人员年度薪酬待遇按市有关部门核定的当年度政府购买服务岗位人员标准执行"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年11月福建人才教育科技发展有限公司招聘简章",
       "url": "https://www.shiyebian.com/xinxi/49718.html",
       "sourceId": "shiyebian",
@@ -9022,8 +9023,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "unknown",
         "date": null,
@@ -9051,7 +9052,7 @@
       "salary": "待遇见原文"
     },
     {
-      "parserVersion": 2,
+      "parserVersion": 3,
       "announcementTitle": "2026年11月福州产发园区运营管理有限公司福州晋安分公司社会招聘公告（二）",
       "url": "https://www.shiyebian.com/xinxi/49717.html",
       "sourceId": "shiyebian",
@@ -9059,8 +9060,8 @@
       "category": "事业单位",
       "publishedAt": null,
       "firstSeenAt": "2026-11-26T13:50:13+08:00",
-      "lastSeenAt": "2026-11-26T13:54:37+08:00",
-      "detailFetchedAt": "2026-11-26T13:54:37+08:00",
+      "lastSeenAt": "2026-11-26T14:00:30+08:00",
+      "detailFetchedAt": "2026-11-26T14:00:30+08:00",
       "deadline": {
         "kind": "date",
         "date": "2026-12-03",
@@ -9102,7 +9103,7 @@
       "name": "应届生求职网",
       "category": "校园招聘",
       "url": "https://www.yingjiesheng.com/other/",
-      "checkedAt": "2026-11-26T13:57:43+08:00",
+      "checkedAt": "2026-11-26T14:00:30+08:00",
       "status": "error",
       "count": 0,
       "discovered": 75,
@@ -9122,7 +9123,7 @@
       "name": "事业单位招聘考试网",
       "category": "事业单位",
       "url": "https://www.shiyebian.com/",
-      "checkedAt": "2026-11-26T13:57:43+08:00",
+      "checkedAt": "2026-11-26T14:00:30+08:00",
       "status": "ok",
       "count": 44,
       "discovered": 110,
@@ -9136,7 +9137,7 @@
       "name": "高校人才网",
       "category": "高校与科研",
       "url": "https://www.gaoxiaojob.com/",
-      "checkedAt": "2026-11-26T13:57:43+08:00",
+      "checkedAt": "2026-11-26T14:00:30+08:00",
       "status": "partial",
       "count": 88,
       "discovered": 296,
@@ -9152,7 +9153,7 @@
       "name": "人社部 · 中央事业单位",
       "category": "政府公告",
       "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/zpgg/index.html",
-      "checkedAt": "2026-11-26T13:57:43+08:00",
+      "checkedAt": "2026-11-26T14:00:30+08:00",
       "status": "error",
       "count": 0,
       "message": "来源需要人工验证，已跳过"
@@ -9162,7 +9163,7 @@
       "name": "浙江农林大学 · 就业信息",
       "category": "高校就业网",
       "url": "https://yjsb.zafu.edu.cn/",
-      "checkedAt": "2026-11-26T13:57:43+08:00",
+      "checkedAt": "2026-11-26T14:00:30+08:00",
       "status": "ok",
       "count": 5,
       "discovered": 5,
@@ -9176,7 +9177,7 @@
       "name": "南京大学 · 人才招聘",
       "category": "高校与科研",
       "url": "https://rczp.nju.edu.cn/",
-      "checkedAt": "2026-11-26T13:57:43+08:00",
+      "checkedAt": "2026-11-26T14:00:30+08:00",
       "status": "ok",
       "count": 25,
       "discovered": 28,
@@ -9190,7 +9191,7 @@
       "name": "中国科学院 · 官方招聘",
       "category": "政府公告",
       "url": "https://www.cas.cn/rc/rczp/",
-      "checkedAt": "2026-11-26T13:57:43+08:00",
+      "checkedAt": "2026-11-26T14:00:30+08:00",
       "status": "error",
       "count": 0,
       "message": "404 Client Error: Not Found for url: https://www.cas.cn/rc/rczp/"
