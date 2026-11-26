@@ -16,6 +16,12 @@ class ExtractionTests(unittest.TestCase):
         self.assertEqual(deadline('报名时间：2026年11月1日起开始接受申请。')['kind'],'unknown')
     def test_exam_date_not_deadline(self):
         self.assertEqual(deadline('笔试时间2026年12月1日。发布日期2026-11-26')['kind'],'unknown')
+    def test_header_does_not_mistake_publication_for_deadline(self):
+        header='发布时间：2026-11-26 截止日期：详见正文 学历要求：大专及以上 工作地点：北京 报名方式：站内投递'
+        self.assertEqual(deadline(header)['kind'],'unknown')
+    def test_explicit_deadline_in_metadata(self):
+        header='发布时间：2026-11-26 截止日期：2026-12-03 报名方式：站内投递'
+        self.assertEqual(deadline(header)['date'],'2026-12-03')
     def test_unspecified_time_not_invented(self):
         d=deadline('报名截止时间：2026-11-30。')
         self.assertIsNone(d['time'])
