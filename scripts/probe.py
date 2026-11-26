@@ -6,11 +6,10 @@ from urllib.parse import urljoin
 from urllib.robotparser import RobotFileParser
 
 SOURCES = [
- 'https://qzzyd.com/j/347453',
- 'https://jobs.ultraai.site/',
- 'https://wangshen.mianlingai.com/xiaozhao/',
- 'https://www.job5156.com/guangzhou/',
- 'https://www.zhaopin.com/sou/jl635/p2/',
+ 'https://jobs.ultraai.site/discover',
+ 'https://jobs.ultraai.site/sources',
+ 'https://jobs.ultraai.site/terms',
+ 'https://www.mianlingai.com/jobs/',
 ]
 def probe(url):
  out=[url]

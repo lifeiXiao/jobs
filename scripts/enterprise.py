@@ -183,7 +183,7 @@ def original_key(url):
     if 'zhipin.com' in p.netloc and '/job_detail/' in path:return 'boss:'+path.split('/job_detail/')[-1].split('.')[0]
     # Keep semantic job IDs and discard tracking parameters only.
     useful={k:v for k,v in query.items() if k.lower() in ('id','jobid','postid','positionid','job_id','position_id')}
-    return p.netloc.removeprefix('www.').lower()+path+('?' +urlencode(useful,doseq=True) if useful else '')
+    return re.sub(r'^www\.','',p.netloc.lower())+path+('?' +urlencode(useful,doseq=True) if useful else '')
 
 def normalized(value):
     return re.sub(r'[\s\W_]+','',unicodedata.normalize('NFKC',value).lower())
